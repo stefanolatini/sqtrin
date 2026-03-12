@@ -24,6 +24,85 @@
     </ul>
   </nav>
 
+  {{/* Onda quadra animata p5.js */}}
+  <div id="wave-container">
+    <canvas id="wave-canvas"></canvas>
+  </div>
+  <script>
+    (function() {
+      const canvas = document.getElementById('wave-canvas');
+      const ctx = canvas.getContext('2d');
+      let offset = 0;
+      let amp = 0;
+      let targetAmp = 0;
+      let period = 120;
+      let targetPeriod = 120;
+
+      function resize() {
+        canvas.width  = 1200;//canvas.offsetWidth;
+        canvas.height = canvas.offsetHeight;
+        amp = targetAmp = canvas.height * 0.3;
+      }
+
+      function scheduleAmpChange() {
+        const H = canvas.height;
+        targetAmp = H * (0.1 + Math.random() * 0.4); // tra 10% e 50% dell'altezza
+        const delay = 500 + Math.random() * 3000; // tra 0.5s e 3.5s
+        setTimeout(scheduleAmpChange, delay);
+      }
+
+      function schedulePeriodChange() {
+        targetPeriod = 40 + Math.random() * 200; // tra 40px e 240px di periodo
+        const delay = 100 + Math.random() * 200; // tra 1s e 5s
+        setTimeout(schedulePeriodChange, delay);
+      }
+
+      function draw() {
+        const W = canvas.width;
+        const H = canvas.height;
+        const mid = H / 2;
+
+        // interpolazione graduale
+        amp    += (targetAmp    - amp)    * 0.02;
+        period += (targetPeriod - period) * 0.02;
+
+        ctx.fillStyle = '#000';
+        ctx.fillRect(0, 0, W, H);
+
+        ctx.strokeStyle = '#fff';
+        ctx.lineWidth = 10;
+        ctx.beginPath();
+
+        let x = 0;
+        while (x <= W) {
+          const phase = Math.floor((x + offset) / period) % 2;
+          const y = phase === 0 ? mid - amp : mid + amp;
+          if (x === 0) ctx.moveTo(x, y);
+          else ctx.lineTo(x, y);
+
+          // transizione verticale
+          const nextPhase = Math.floor((x + 1 + offset) / period) % 2;
+          if (nextPhase !== phase) {
+            const nextY = nextPhase === 0 ? mid - amp : mid + amp;
+            ctx.lineTo(x + 1, nextY);
+          }
+          x++;
+        }
+        ctx.stroke();
+
+        //offset = (offset + 1) % (period * 2);
+         offset += 10;
+        requestAnimationFrame(draw);
+      }
+
+      resize();
+      window.addEventListener('resize', resize);
+      scheduleAmpChange();
+      schedulePeriodChange();
+      draw();
+    })();
+  </script>
+
   {{/* Nav visiva principale */}}
   <nav>
     {{/* <a href="{{ "/" | relURL }}" class="site-title">{{ site.Title }}</a> */}}
