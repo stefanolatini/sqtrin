@@ -6,8 +6,8 @@
   <meta name="color-scheme" content="light dark">
   <title>{{ if not .IsHome }}{{ .Title }} &mdash; {{ end }}{{ site.Title }}</title>
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
-  {{ with site.Params.thumbnail }}<meta name="thumbnail" content="{{ . }}">{{ end }}
-  {{ with site.Params.rss }}<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="{{ . }}">{{ end }}
+  {{ with site.Params.thumbnail }}<meta name="thumbnail" content="{{ . | absURL }}">{{ end }}
+  {{ with site.Params.rss }}<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="{{ . | relURL }}">{{ end }}
   <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
   {{ with site.Params.favicon }}<link rel="shortcut icon" type="image/png" href="{{ . | relURL }}">{{ end }}
 </head>
