@@ -1,6 +1,6 @@
 ---
 title: "home"
-image: "/media/content/home.jpg"
+image: "/sqtrin/media/content/home.jpg"
 image_alt: "descrizione dell'immagine principale della home"
 ---
 
