@@ -24,86 +24,64 @@
     </ul>
   </nav>
 
-  {{/* Onda quadra animata p5.js */}}
-  <div id="wave-container">
-    <canvas id="wave-canvas"></canvas>
+  {{/* Visualizzatore microfono p5.js */}}
+  <div id="mic-container">
+    <div id="mic-sketch"></div>
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/addons/p5.sound.min.js"></script>
   <script>
-    (function() {
-      const canvas = document.getElementById('wave-canvas');
-      const ctx = canvas.getContext('2d');
-      let offset = 0;
-      let amp = 0;
-      let targetAmp = 0;
-      let period = 120;
-      let targetPeriod = 120;
+    new p5(function(p) {
+      var mic, fft;
+      var paused = false;
+      var firstPos = 0;
 
-      function resize() {
-        canvas.width  = 1200;//canvas.offsetWidth;
-        canvas.height = canvas.offsetHeight;
-        amp = targetAmp = canvas.height * 0.3;
-      }
+      p.setup = function() {
+        var cnv = p.createCanvas(p.windowWidth, 120);
+        cnv.parent('mic-sketch');
+        p.userStartAudio();
+        mic = new p5.AudioIn();
+        mic.start();
+        fft = new p5.FFT(0.8, 2048);
+        fft.setInput(mic);
+      };
 
-      function scheduleAmpChange() {
-        const H = canvas.height;
-        targetAmp = H * (0.1 + Math.random() * 0.4); // tra 10% e 50% dell'altezza
-        const delay = 500 + Math.random() * 3000; // tra 0.5s e 3.5s
-        setTimeout(scheduleAmpChange, delay);
-      }
+      p.draw = function() {
+        if (paused) return;
 
-      function schedulePeriodChange() {
-        targetPeriod = 40 + Math.random() * 200; // tra 40px e 240px di periodo
-        const delay = 100 + Math.random() * 200; // tra 1s e 5s
-        setTimeout(schedulePeriodChange, delay);
-      }
+        p.background(0);
 
-      function draw() {
-        const W = canvas.width;
-        const H = canvas.height;
-        const mid = H / 2;
+        var waveform = fft.waveform();
+        var trigger = 0;
 
-        // interpolazione graduale
-        amp    += (targetAmp    - amp)    * 0.02;
-        period += (targetPeriod - period) * 0.02;
+        p.beginShape();
+        p.strokeWeight(2);
+        p.noFill();
+        p.stroke(255);
 
-        ctx.fillStyle = '#000';
-        ctx.fillRect(0, 0, W, H);
-
-        ctx.strokeStyle = '#fff';
-        ctx.lineWidth = 10;
-        ctx.beginPath();
-
-        let x = 0;
-        while (x <= W) {
-          const phase = Math.floor((x + offset) / period) % 2;
-          const y = phase === 0 ? mid - amp : mid + amp;
-          if (x === 0) ctx.moveTo(x, y);
-          else ctx.lineTo(x, y);
-
-          // transizione verticale
-          const nextPhase = Math.floor((x + 1 + offset) / period) % 2;
-          if (nextPhase !== phase) {
-            const nextY = nextPhase === 0 ? mid - amp : mid + amp;
-            ctx.lineTo(x + 1, nextY);
+        for (var i = 1; i < waveform.length; i++) {
+          if (trigger === 0 && waveform[i] > 0 && waveform[i - 1] <= 0) {
+            trigger = 1;
+            firstPos = i;
           }
-          x++;
+          if (trigger === 1) {
+            var x = p.map(i - firstPos, 0, waveform.length, 0, p.width * 3);
+            var y = p.map(waveform[i], -1, 1, p.height, 0);
+            p.vertex(x, y);
+          }
         }
-        ctx.stroke();
+        p.endShape();
+      };
 
-        //offset = (offset + 1) % (period * 2);
-         offset += 10;
-        requestAnimationFrame(draw);
-      }
+      p.mouseClicked = function() {
+        paused = !paused;
+      };
 
-      resize();
-      window.addEventListener('resize', resize);
-      scheduleAmpChange();
-      schedulePeriodChange();
-      draw();
-    })();
+      p.windowResized = function() {
+        p.resizeCanvas(p.windowWidth, 120);
+      };
+    });
   </script>
-
-  {{/* Nav visiva principale */}}
   <nav>
     {{/* <a href="{{ "/" | relURL }}" class="site-title">{{ site.Title }}</a> */}}
     <a href="{{ "/" | relURL }}" class="site-title"><img src="{{ site.Params.logo | relURL }}" alt="{{ site.Title }} logo"></a>
