@@ -37,7 +37,7 @@
         <article class="log-entry" id="{{ .Params.month }}">
           <h4><a href="#{{ .Params.month }}">{{ .Title }}</a></h4>
           {{ with .Params.image }}
-          <img src="{{ . | relURL }}" alt="{{ .Params.image_alt }}" loading="lazy">
+          <img src="{{ . | relURL }}" alt="{{ $.Params.image_alt }}" loading="lazy">
           {{ end }}
           <div class="content">{{ .Content }}</div>
         </article>
