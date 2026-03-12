@@ -26,7 +26,8 @@
 
   {{/* Nav visiva principale */}}
   <nav>
-    <a href="{{ "/" | relURL }}" class="site-title">{{ site.Title }}</a>
+    {{/* <a href="{{ "/" | relURL }}" class="site-title">{{ site.Title }}</a> */}}
+    <a href="{{ "/" | relURL }}" class="site-title"><img src="{{ site.Params.logo | relURL }}" alt="{{ site.Title }} logo"></a>
     <ul>
       {{ range site.Menus.main }}
       <li>

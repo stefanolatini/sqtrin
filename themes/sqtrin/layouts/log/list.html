@@ -1,0 +1,35 @@
+{{ define "main" }}
+<section class="log">
+  <h1>{{ .Title }}</h1>
+  {{ with .Content }}<div class="content">{{ . }}</div>{{ end }}
+
+  {{ range .Pages.GroupByDate "2006" }}
+  {{/* ogni gruppo è un anno — il più recente per primo */}}
+  <section class="log-year" id="{{ .Key }}">
+    <h2><a href="#{{ .Key }}">{{ .Key }}</a></h2>
+
+    {{/* ToC a due colonne con i mesi dell'anno */}}
+    <ul class="col2">
+      {{ range .Pages.ByDate.Reverse }}
+      <li>
+        <a href="#{{ .Params.month }}">{{ dateFormat "01-2006" .Date }}</a>
+      </li>
+      {{ end }}
+    </ul>
+
+    {{/* Contenuto di ogni mese */}}
+    {{ range .Pages.ByDate.Reverse }}
+    <article class="log-entry" id="{{ .Params.month }}">
+      <h3><a href="#{{ .Params.month }}">{{ .Title }}</a></h3>
+      {{ with .Params.image }}
+      <img src="{{ . | relURL }}" alt="{{ $.Params.image_alt }}" loading="lazy">
+      {{ end }}
+      <div class="content">{{ .Content }}</div>
+    </article>
+    {{ end }}
+
+  </section>
+  {{ end }}
+
+</section>
+{{ end }}

@@ -1,11 +1,71 @@
 {{ define "main" }}
 <section class="home">
   <div class="hero">
-    <h1>{{ site.Title }}</h1>
+    <!--<h1>{{ site.Title }}</h1>-->
     <p class="tagline">{{ site.Params.description }}</p>
   </div>
-  <div class="content">
-    {{ .Content }}
-  </div>
+
+  {{ with .Params.image }}
+  <img src="{{ . }}" alt="{{ $.Params.image_alt }}" loading="lazy" class="home-cover">
+  {{ end }}
+
+  {{ with .Content }}<div class="content">{{ . }}</div>{{ end }}
+
+  {{/* ── Log ─────────────────────────────────────────── */}}
+  {{ $logPages := where site.RegularPages "Section" "log" }}
+  {{ if $logPages }}
+  <section class="log">
+    <h2 id="log"><a href="#log">log</a></h2>
+    {{ with site.Params.rss }}
+    <p class="log-rss">Aggiornamenti via <a href="{{ . }}">RSS</a>.</p>
+    {{ end }}
+
+    {{ $byYear := $logPages.GroupByDate "2006" }}
+    {{ $currentYear := now.Format "2006" }}
+
+    {{/* Anno corrente: mostrato per intero nella home */}}
+    {{ range $byYear }}
+      {{ if eq .Key $currentYear }}
+      <section class="log-year" id="{{ .Key }}">
+        <h3><a href="#{{ .Key }}">{{ .Key }}</a></h3>
+        <ul class="col2">
+          {{ range .Pages.ByDate.Reverse }}
+          <li><a href="#{{ .Params.month }}">{{ dateFormat "01-2006" .Date }}</a></li>
+          {{ end }}
+        </ul>
+        {{ range .Pages.ByDate.Reverse }}
+        <article class="log-entry" id="{{ .Params.month }}">
+          <h4><a href="#{{ .Params.month }}">{{ .Title }}</a></h4>
+          {{ with .Params.image }}
+          <img src="{{ . }}" alt="{{ $.Params.image_alt }}" loading="lazy">
+          {{ end }}
+          <div class="content">{{ .Content }}</div>
+        </article>
+        {{ end }}
+      </section>
+      {{ end }}
+    {{ end }}
+
+    {{/* Archivi: anni precedenti come link */}}
+    {{ $pastYears := slice }}
+    {{ range $byYear }}
+      {{ if ne .Key $currentYear }}
+        {{ $pastYears = $pastYears | append .Key }}
+      {{ end }}
+    {{ end }}
+    {{ if $pastYears }}
+    <div class="log-archives">
+      <h3>archivi</h3>
+      <p>
+        {{ range $i, $y := $pastYears -}}
+          <a href="/log/#{{ $y }}">{{ $y }}</a>{{ if lt $i (sub (len $pastYears) 1) }}, {{ end }}
+        {{- end }}
+      </p>
+    </div>
+    {{ end }}
+
+  </section>
+  {{ end }}
+
 </section>
 {{ end }}

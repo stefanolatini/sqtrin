@@ -1,6 +1,6 @@
 baseURL = "https://sqtrin.org/"
 languageCode = "it-IT"
-title = "sqtrin"
+title = "Square Terror Collective"
 theme = "sqtrin"
 
 [params]
@@ -20,14 +20,22 @@ theme = "sqtrin"
     url = "/"
     weight = 1
   [[menus.main]]
+    name = "terrore quadrato"
+    url = "/terrore-quadrato/"
+    weight = 2
+  [[menus.main]]
     name = "chi siamo"
     url = "/chi-siamo/"
-    weight = 2
+    weight = 3
   [[menus.main]]
     name = "progetti"
     url = "/progetti/"
-    weight = 3
+    weight = 4
   [[menus.main]]
     name = "contatti"
     url = "/contatti/"
-    weight = 4
+    weight = 5
+  [[menus.main]]
+    name = "articoli"
+    url = "/articoli/"
+    weight = 6
