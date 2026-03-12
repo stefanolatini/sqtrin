@@ -25,7 +25,7 @@
   </nav>
 
   {{/* Visualizzatore microfono p5.js */}}
-  <div id="mic-container">
+  {{/*<div id="mic-container">
     <div id="mic-sketch"></div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.min.js"></script>
@@ -36,6 +36,29 @@
       var paused = false;
       var firstPos = 0;
 
+      // ── onda quadra AUDIO generata da touch/wheel ─────────
+      var audioCtx = null;
+
+      function spawnSquareWave() {
+        if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        if (audioCtx.state === 'suspended') audioCtx.resume();
+
+        var osc  = audioCtx.createOscillator();
+        var gain = audioCtx.createGain();
+        var freq = 80 + Math.random();// * 400;   // Hz casuale 80–480
+        var dur  = 0.1 + Math.random();// * 0.5;  // durata 0.3–0.8s
+
+        osc.type = 'square';
+        osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
+        gain.gain.setValueAtTime(0.1, audioCtx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + dur);
+
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+        osc.start(audioCtx.currentTime);
+        osc.stop(audioCtx.currentTime + dur);
+      }
+
       p.setup = function() {
         var cnv = p.createCanvas(p.windowWidth, 120);
         cnv.parent('mic-sketch');
@@ -44,6 +67,10 @@
         mic.start();
         fft = new p5.FFT(0.8, 2048);
         fft.setInput(mic);
+
+        // wheel e touch → genera onda quadra audio
+        window.addEventListener('wheel',      function() { spawnSquareWave(); }, { passive: true });
+        window.addEventListener('touchstart', function() { spawnSquareWave(); }, { passive: true });
       };
 
       p.draw = function() {
@@ -51,11 +78,12 @@
 
         p.background(0);
 
+        // ── segnale microfono ────────────────────────────────
         var waveform = fft.waveform();
         var trigger = 0;
 
         p.beginShape();
-        p.strokeWeight(2);
+        p.strokeWeight(5);
         p.noFill();
         p.stroke(255);
 
@@ -81,10 +109,10 @@
         p.resizeCanvas(p.windowWidth, 120);
       };
     });
-  </script>
+  </script>*/}}
   <nav>
-    {{/* <a href="{{ "/" | relURL }}" class="site-title">{{ site.Title }}</a> */}}
-    <a href="{{ "/" | relURL }}" class="site-title"><img src="{{ site.Params.logo | relURL }}" alt="{{ site.Title }} logo"></a>
+    <h1><a href="{{ "/" | relURL }}" class="site-title">{{ site.Title }}</a></h1>
+    {{/*<a href="{{ "/" | relURL }}" class="site-title"><img src="{{ site.Params.logo | relURL }}" alt="{{ site.Title }} logo"></a>*/}}
     <ul>
       {{ range site.Menus.main }}
       <li>
