@@ -1,0 +1,17 @@
+image: alpine/latest
+
+packages:
+  - hugo
+  - hut
+
+environment:
+  site: sqtrin.srht.site
+  # domain: sqtrin.org  # decommentare quando hai il DNS configurato
+
+tasks:
+  - build: |
+      cd sqtrin
+      hugo --minify
+  - publish: |
+      cd sqtrin
+      hut pages publish -d $site ./public

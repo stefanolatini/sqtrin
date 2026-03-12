@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <title>{{ if not .IsHome }}{{ .Title }} &mdash; {{ end }}{{ site.Title }}</title>
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
+  {{ with site.Params.thumbnail }}<meta name="thumbnail" content="{{ . }}">{{ end }}
+  {{ with site.Params.rss }}<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="{{ . }}">{{ end }}
+  <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
+  {{ with site.Params.favicon }}<link rel="shortcut icon" type="image/png" href="{{ . | relURL }}">{{ end }}
+</head>
+<body class="page_{{ .Type }}{{ if .IsHome }} page_home{{ end }}">
+
+  {{/* Nav accessibile per screen reader e mobile (testo puro) */}}
+  <nav class="hidden">
+    <ul>
+      {{ range site.Menus.main }}
+      <li>
+        <a href="{{ .URL }}">{{ .Name }}</a>
+      </li>
+      {{ end }}
+    </ul>
+  </nav>
+
+  {{/* Nav visiva principale */}}
+  <nav>
+    <a href="{{ "/" | relURL }}" class="site-title">{{ site.Title }}</a>
+    <ul>
+      {{ range site.Menus.main }}
+      <li>
+        <a href="{{ .URL }}"{{ if eq $.RelPermalink .URL }} class="active"{{ end }}>{{ .Name }}</a>
+      </li>
+      {{ end }}
+    </ul>
+  </nav>
+
+  <main>
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  <footer>
+    <a class="logo" href="{{ "/" | relURL }}" aria-label="homepage">
+      {{ with site.Params.logo }}
+      <img src="{{ . | relURL }}" alt="{{ site.Title }} logo" width="100" height="100">
+      {{ else }}
+      <span class="logo-text">{{ site.Title }}</span>
+      {{ end }}
+    </a>
+    <span>
+      <b>{{ site.Title }}</b> &copy; {{ now.Year }}
+    </span>
+    <div class="mobile">
+      <span>
+        {{ range site.Menus.footer }}
+        <a href="{{ .URL }}">{{ .Name }}</a>{{ if not .Post }} | {{ end }}
+        {{ end }}
+        {{ with site.Params.license }}
+        <a href="{{ .url }}" target="_blank">{{ .name }}</a>
+        {{ end }}
+      </span>
+    </div>
+  </footer>
+
+</body>
+</html>

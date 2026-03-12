@@ -1,0 +1,158 @@
+
+::selection       { background: #eee; opacity:1.0; color:#000; padding:10px; /* Safari */ }
+
+body { background:#fff; color:#000; overflow-x: hidden; font-family: sans-serif; padding:0; margin:0; }
+
+body nav { display: flex; flex-wrap: wrap; justify-content: center; }
+body nav .nav_link { text-align: center;}
+body nav a img.active { display:none }
+body nav a img.inactive { display:block }
+
+body.page_home nav a.home_rabbit img.active { display:block }
+body.page_home nav a.home_rabbit img.inactive { display:none }
+body.page_about nav a.about_rabbit img.active { display:block }
+body.page_about nav a.about_rabbit img.inactive { display:none }
+body.page_knowledge nav a.knowledge_rabbit img.active { display:block }
+body.page_knowledge nav a.knowledge_rabbit img.inactive { display:none }
+body.page_articles nav a.articles_rabbit img.active { display:block }
+body.page_articles nav a.articles_rabbit img.inactive { display:none }
+body.page_projects nav a.projects_rabbit img.active { display:block }
+body.page_projects nav a.projects_rabbit img.inactive { display:none }
+body.page_travel nav a.travel_rabbit img.active { display:block }
+body.page_travel nav a.travel_rabbit img.inactive { display:none }
+
+nav { padding: 20px 30px; max-width:900px; margin-top: 45px; margin-bottom:20px }
+nav a { display:inline-block; }
+nav a img { width:144px; height:auto; display:block; }
+nav .hidden {position:absolute; overflow:hidden; left: -9999px}
+
+main { padding: 0px 45px 45px 45px; max-width:900px; }
+main img { display:block; width:100%; height:auto; max-width: 900px; margin-bottom: 30px;}
+main > * { max-width: 900px; margin-bottom: 30px }
+main > h1 { font-size:45px; text-transform: capitalize; display: none}
+main > h2 { font-size:30px; text-transform: capitalize}
+main > h3 { font-size:20px; text-transform: capitalize}
+main > h4 { font-size:35px; text-transform: capitalize}
+main p { line-height: 25px; font-size:16px; margin-top: 0px; max-width:700px }
+main > ul { line-height: 25px; max-width: 700px; }
+
+figure {margin:0; padding-bottom: 20px}
+figcaption {font-size: 14px;padding: 2px}
+
+svg.sprite { width:20px; height:20px; margin-bottom:0px }
+.empty { background:#efefef; }
+.bg0 { background:white; color:black; }
+.bg1 { background:black; color:white; }
+.bg2 { background:#72dec2; color:black; }
+.bg3 { background:#ff0000; color:black; }
+.fg0 { fill:white; }
+.fg1 { fill:black; }
+.fg2 { fill:#72dec2; }
+.fg3 { fill:#ff0000; }
+code.button { background: #000; color: white; font-size: smaller; display: inline-block; padding: 0px 6px; font-weight: bold; border-radius: 2px; line-height: 22px }
+
+main hr { border:1px; clear:both; }
+
+main > ul.jump { columns:2; line-height: 20px}
+main > ul.jump li { list-style-type: decimal-leading-zero; list-style-position: inside; text-transform: capitalize;}
+main img.medium { max-width: 300px; padding: 10px}
+main img.sm { max-width: 72px; padding: 10px}
+
+main .ethics-icons { display: flex; gap: 10px }
+main .ethics-icon { width: 100px; height: auto; align-self: end;}
+
+main cite {font-size: 17px;display: block;clear: both;margin-bottom: 30px;}
+main cite:before {content: "— ";}
+main > q { font-size: 20px;font-style: italic;max-width: 500px; display: block; margin-left:30px; }
+main > pre { max-width: 700px; font-family: monospace; background: black; color:white; padding:15px; overflow: scroll; }
+main > code { max-width: 700px; font-family: monospace; font-size:12px; margin-bottom: 30px; display: block; background:black; color:white; padding:15px; white-space: pre; }
+main > code comment { color:#777}
+
+main .button { background-color: #000;border: 2px solid white;color: white;padding: 13px 28px;text-align: center;text-decoration: none;display: inline-block;font-size: 14px;border-radius: 200px;font-weight: bold; margin-right: 15px; margin-bottom: 30px;}
+main .button:hover { background-color: #333 !important; color: white; cursor:pointer;  }
+main .button small { color:black }
+main .button.patreon { border-color: #e75942}
+main .button.patreon:hover { background: #e75942 !important; cursor:pointer;}
+main .buttonstore { background-color: #000;border: 2px solid white;color: white;padding: 8px 20px;text-align: center;text-decoration: none;display: inline-block;font-size: 14px;border-radius: 200px;font-weight: bold; margin-right: 15px; margin-bottom: 10px; }
+main .buttonstore:hover { background-color: #333 !important; color: white; cursor:pointer;  }
+main .buttondrop { background-color: #000;border: 2px solid white;color: white;padding: 8px 8px;text-align: center;text-decoration: none;display: inline-block;font-size: 12px;font-weight: bold; margin-right: 10px; margin-top: 8px; width: 120px; border-radius: 200px}
+main .buttondrop:hover { background-color: #333 !important; color: white; cursor:pointer;  }
+
+details > summary {color: white;font-size: 14px;font-weight: bold;text-align: center;padding: 8px; padding-top: 6px; background-color: #000; border: 2px solid white; border-radius: 200px;cursor: pointer}
+details p {padding-top: 10px; margin-bottom: 0px; }
+
+body select { color: black; margin-bottom: 20px }
+main table {max-width: 700px; overflow-x:auto;}
+main table.drpdown { padding-bottom: 15px; font-size: 18px}
+main table.drpdown td { padding-bottom: 15px; color: black;}
+
+main > table.col tr th { text-align: left}
+main > table.col tr td { border-right:1.5px solid black}
+main > table.col tr > * { padding:5px 20px}
+main > table.col tr td:last-child { border-right: 0px }
+main > table.col tr > *:first-child { padding-left: 10px }
+main > table.col b { font-weight: bold }
+
+main img.detail { max-width: 64px; float: left;border: 1px solid #777;padding: 20px;margin: 0px 20px 20px 0px;border-radius: 3px; }
+main .shortcut {display: inline-block; margin-right:3px; }
+main dt, kbd { background: #000; display: inline-block; padding: 2px 5px; margin: 0px; color: white; font-size: 12px; line-height: 16px; border-radius: 2px; font-weight: bold }
+main .shortcut-list dd { display: inline; line-height: 25px; margin-left: 10px; margin-right: 0px; }
+
+main > table.logbook tr td { padding-bottom: 15px;padding-top: 15px;}
+main > table img { max-width: 100%; display: block; margin:20px 0;}
+main > table tr th { text-align: left; font-weight: bold }
+main > table tr > * { padding:5px 15px; vertical-align: top;}
+
+.gridprojects {list-style-type: none;width: 100%;display: grid;grid-template-columns: repeat(4, 1fr);}
+.projects {box-sizing: border-box;padding: 10px;margin: 0;}
+
+.grid {list-style-type: none;width: 100%;display: grid;grid-template-columns: repeat(3, 1fr);}
+.article {box-sizing: border-box;padding: 10px;margin: 0;}
+.featured {width: 100%;height: 150px;background-repeat: no-repeat;background-size: cover;background-position: center;}
+
+footer { line-height: 45px; clear:both; padding:45px; border-top:2px solid black }
+footer .mobile { float: right; }
+footer a.logo { margin-right: 20px; float:left; }
+footer a.logo img { width: 45px; height: auto; }
+footer hr { margin-bottom: 15px; display:none;  }
+
+/* Modular */
+
+a { color: black }
+
+ul { margin:0px 0px 30px 0px; }
+
+.col2 { columns: 2 }
+.capital { text-transform: capitalize }
+.notice { max-width: 700px; padding:20px; border:2px solid black;  }
+ul.nobull li {list-style-type: none}
+
+.hidden { display: none }
+
+/* Theme */
+
+@media (prefers-color-scheme: dark) {
+	body { background: #000; color: white}
+	/*nav a img.text, img.invert, footer a.logo, .mono { color:#000; filter: invert(1)}*/
+	main dt, kbd {background:white; color:#000}
+	body a { color: white;}
+	main > pre { background: white; color:#000}
+	main > code { background:white; color:#000}
+	body select { color: black; background-color: white;}
+	main .project {border-left:2px solid white; padding-left: 15px; font-style: italic;}
+	.notice { border-color:white; }
+	main .progress > div { background-color: white}
+	main .progress > div > span { color: black}
+	footer { border-top: 2px solid white }
+	details > summary {color:white}
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 1100px) {
+	nav { padding: 20px;}
+	main { padding: 20px;}
+	footer .mobile { float: left;}
+	.gridprojects, .projects { grid-column-start: span 2;}
+	.article, .grid, .featured { grid-column-start: span 3;}
+}
