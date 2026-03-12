@@ -5,10 +5,10 @@ theme = "sqtrin"
 
 [params]
   description = "Descrizione del collettivo"
-  thumbnail = "/media/services/rss.jpg"
+  thumbnail = "/sqtrin/media/services/rss.jpg"
   rss = "/index.xml"
-  favicon = "/media/services/shortcut.png"
-  logo = "/media/interface/logo.png"
+  favicon = "/sqtrin/media/services/shortcut.png"
+  logo = "/sqtrin/media/interface/logo.png"
   author = "square_terror"
   [params.license]
     name = "BY-NC-SA 4.0"
