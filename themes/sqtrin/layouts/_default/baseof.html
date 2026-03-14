@@ -116,7 +116,7 @@
 
     {{/* Nav visibile: logo come home, link stile h3, separati da • */}}
     <nav class="main-nav" aria-hidden="true">
-      <a href="{{ "/" | relURL }}" class="nav-home{{ if $.IsHome }} active{{ end }}" aria-label="{{ site.Title }}">
+      <a href="{{ "/sqrtin" | relURL }}" class="nav-home{{ if $.IsHome }} active{{ end }}" aria-label="{{ site.Title }}">
         {{ with site.Params.square }}
         <img src="{{ . | relURL }}" alt="{{ site.Title }}" class="nodithering" width="30" height="30">
         {{ else }}
