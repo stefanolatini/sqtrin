@@ -1,7 +1,7 @@
 ---
-title: "Ciao mondo di merda"
+title: "Hello rotten world"
 date: 2026-03-12
-description: "Motivazione più o meno formale di questo sito internet"
+description: "WHY A WEBSITE?"
 ---
 
 # Perché avere un sito nel 2026?

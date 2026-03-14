@@ -1,0 +1,57 @@
+{{ define "main" }}
+{{ $now := now }}
+{{ $upcoming := slice }}
+{{ $past := slice }}
+
+{{ range .Pages }}
+  {{ if .Params.event_date }}
+    {{ if (time .Params.event_date).After $now }}
+      {{ $upcoming = $upcoming | append . }}
+    {{ else }}
+      {{ $past = $past | append . }}
+    {{ end }}
+  {{ else }}
+    {{ $past = $past | append . }}
+  {{ end }}
+{{ end }}
+
+{{ $upcoming = sort $upcoming "Params.event_date" "asc" }}
+{{ $past    = sort $past    "Params.event_date" "desc" }}
+
+<section class="list">
+  {{ with .Content }}<div class="content">{{ . }}</div>{{ end }}
+
+  {{ if $upcoming }}
+  <h2>Upcoming</h2>
+  <ul class="event-items items">
+    {{ range $upcoming }}
+    <li>
+      <p>
+        <span class="item-date">[{{ dateFormat "02.01.2006" (time .Params.event_date) }}]</span> -
+        <span class="item-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></span>
+        <span class="item-title">@{{ .Params.location }}</span>
+      </p>
+      {{ with .Description }}<p>{{ . }}</p>{{ end }}
+    </li>
+    {{ end }}
+  </ul>
+  {{ end }}
+
+  {{ if $past }}
+  <h2>Past</h2>
+  <ul class="event-items items">
+    {{ range $past }}
+    <li>
+      <p>
+        {{ with .Params.event_date }}<span class="item-date">[{{ dateFormat "02.01.2006" (time .) }}]</span> -{{ end }}
+        <span class="item-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></span>
+        <span class="item-title">@{{ .Params.location }}</span>
+      </p>
+      {{ with .Description }}<p>{{ . }}</p>{{ end }}
+    </li>
+    {{ end }}
+  </ul>
+  {{ end }}
+
+</section>
+{{ end }}
