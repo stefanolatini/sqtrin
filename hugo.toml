@@ -18,7 +18,7 @@ theme = "sqtrin"
 [menus]
   [[menus.main]]
     name = "home"
-    url = "/"
+    url = "/sqtrin/"
     weight = 1
   [[menus.main]]
     name = "events"
