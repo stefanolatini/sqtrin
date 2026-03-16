@@ -8,12 +8,22 @@ image: ""
 
 ## art_emisia666
 
+![artemisia666](/sqtrin/media/content/viola666.png "avatar")
+
+
 The one and only video output of STC.
 At the beginning of 2025 she entered the collective as GB photozine maker.
 
-![image](/media/content/artemisiapic-1.png)
+![image](/sqtrin/media/content/artemisiapic-6.png)
+
+We discovered a way to convert raw bitmap GameboyCamera images from GameBoy to .png files thanks to **mofosyne**'s' [arduino–gameboy-printer-emulator](https://mofosyne.github.io/arduino-gameboy-printer-emulator/);
+Once the convertion was done, she started to work on her photozines.
+
+After a while she pointed out that would be awesome to contribute at our music lives with some glitchy visual stuff and  
 
 ## Ick_
+
+![ick](/sqtrin/media/content/ick-birra.jpg "avatar")
 
 TODO DESCRIPTION
 

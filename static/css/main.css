@@ -195,3 +195,12 @@ ul.nobull li {list-style-type: none}
 
 
 img.nodithering { image-rendering: pixelated; }
+
+img.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  filter: saturate(0.0);
+}

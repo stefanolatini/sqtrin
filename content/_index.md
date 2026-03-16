@@ -12,8 +12,3 @@ Classic Chiptune is an umbrella term that covers a range of styles and mindset t
 
 - Sound design worth for the most, and most of chiptune artists is not focusing on it.
 - Making song cover on tracker simply sucks, it kills the composition flow and often some covers don't express the personal style of the artist.
-
-If you make 
-
-
-<!-- Descrivi qui il collettivo in poche righe -->

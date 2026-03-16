@@ -5,9 +5,10 @@ theme = "sqtrin"
 
 [params]
   description = "Descrizione del collettivo"
-  thumbnail = "/sqtrin/media/services/rss.jpg"
+  thumbnail2 = "/sqtrin/media/services/rss.jpg"
   rss = "/index.xml"
-  favicon = "/sqtrin/media/services/shortcut.png"
+  favicon = "/sqtrin/media/interface/square-fav.png"
+  thumbnail = "/sqtrin/media/interface/square-fav.png"
   square = "/sqtrin/media/interface/square.png"
   logo = "/sqtrin/media/interface/logo.png"
   author = "square_terror"
