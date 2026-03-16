@@ -1,0 +1,28 @@
+{{- $src := .Destination -}}
+{{- $isExternal := or
+    (hasPrefix $src "http://")
+    (hasPrefix $src "https://")
+    (hasPrefix $src "//")
+    (hasPrefix $src "data:") -}}
+
+{{- if not $isExternal -}}
+  {{- $src = relURL $src -}}
+{{- end -}}
+
+{{- if eq .Title "avatar" -}}
+<img
+  src="{{ $src }}"
+  alt="{{ .Text }}"
+  class="avatar"
+  loading="lazy"
+  decoding="async"
+>
+{{- else -}}
+<img
+  src="{{ $src }}"
+  alt="{{ .Text }}"
+  {{ with .Title }}title="{{ . }}"{{ end }}
+  loading="lazy"
+  decoding="async"
+>
+{{- end -}}
