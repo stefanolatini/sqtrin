@@ -1,7 +1,7 @@
 ---
 title: "home"
 image: "/sqtrin/media/content/home.jpg"
-image_alt: "descrizione dell'immagine principale della home"
+image_alt: "photo of Matias Biglieri during Terrore Quadrato 5.0 @Trentaformiche"
 ---
 
 ### _"We're against blip blops since 2019"_
@@ -12,3 +12,4 @@ Classic Chiptune is an umbrella term that covers a range of styles and mindset t
 
 - Sound design worth for the most, and most of chiptune artists is not focusing on it.
 - Making song cover on tracker simply sucks, it kills the composition flow and often some covers don't express the personal style of the artist.
+     

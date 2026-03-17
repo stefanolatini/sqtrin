@@ -1,7 +1,7 @@
 ---
-title: "The Square Wave"
+title: "How it started"
 date: 2026-03-12
-description: "How we started"
+description: "Short genesis of Square Terror"
 ---
 ## It's April 2019
 

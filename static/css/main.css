@@ -69,6 +69,7 @@ main > h2 { font-size:30px; text-transform: capitalize}
 main > h3 { font-size:20px; text-transform: capitalize}
 main > h4 { font-size:35px; text-transform: capitalize}
 main p { line-height: 25px; font-size:16px; margin-top: 0px; max-width:700px }
+main p.item-description { font-style: italic; }
 main > ul { line-height: 25px; max-width: 700px; }
 
 figure {margin:0; padding-bottom: 20px}
@@ -147,8 +148,8 @@ main > table tr > * { padding:5px 15px; vertical-align: top;}
 
 footer { line-height: 45px; clear:both; padding:45px; border-top:2px solid black }
 footer .mobile { float: right; }
-footer a.logo { margin-right: 20px; float:left; }
-footer a.logo img { width: 45px; height: auto; }
+footer a.logo { margin-right: 0px; float:left;}
+footer a.logo img { width: 45px; height: auto; scale:0.7;}
 footer hr { margin-bottom: 15px; display:none;  }
 
 /* Modular */

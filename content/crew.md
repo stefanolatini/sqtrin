@@ -8,7 +8,7 @@ image: ""
 
 ## art_emisia666
 
-![artemisia666](/sqtrin/media/content/viola666.png "avatar")
+![image](/sqtrin/media/content/viola666.png "avatar")
 
 
 The one and only video output of STC.
@@ -23,7 +23,7 @@ After a while she pointed out that would be awesome to contribute at our music l
 
 ## Ick_
 
-![ick](/sqtrin/media/content/ick-birra.jpg "avatar")
+![image](/sqtrin/media/content/ick-birra.jpg "avatar")
 
 TODO DESCRIPTION
 

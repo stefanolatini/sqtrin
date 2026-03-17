@@ -9,7 +9,7 @@
         <span class="item-title">{{ .Title }}</span>
         {{ with .Date }}<span class="item-date">{{ dateFormat "02.01.2006" . }}</span>{{ end }}
       </a>
-      {{ with .Description }}<p>{{ . }}</p>{{ end }}
+      {{ with .Description }}<p class="item-description">// {{ . }}</p>{{ end }}
     </li>
     {{ end }}
   </ul>
