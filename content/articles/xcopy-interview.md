@@ -13,6 +13,10 @@ Finally we got it! After several tries we finally booked a mini-tour with this c
 ```interview
 /////////////////////////
 
+> STC: Hello there!
+> XCOPYPRO: ..??..
+> STC: How did it started? How did you step into micromusic? Were you a fan/listener before performing it?
+> XCOPYPRO: ..??..
 > STC: What's your hardware/software specs, and why did you choose it? Did you change it in years?
 > XCOPYPRO: ..??..
 > STC: Are there any other music instruments outside of the Amiga? Were you born as electronic musician?
