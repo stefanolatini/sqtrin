@@ -10,7 +10,7 @@ Finally we got it! After several tries we finally booked a mini-tour with this c
 ```interview
 /////////////////////////
 
-> STC: What's your hardware/software specs, and why did you chose it? Did you change it in years?
+> STC: What's your hardware/software specs, and why did you choose it? Did you change it in years?
 > XCOPYPRO: ..??..
 > STC: Are there any other music instruments outside of the Amiga? Were you born as electronic musician?
 > XCOPYPRO: ..??..

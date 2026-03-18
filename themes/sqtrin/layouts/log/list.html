@@ -3,7 +3,8 @@
   <h1>{{ .Title }}</h1>
   {{ with .Content }}<div class="content">{{ . }}</div>{{ end }}
 
-  {{ range .Pages.GroupByDate "2006" }}
+  {{ $groups := .Pages.GroupByDate "2006" }}
+  {{ range $groups }}
   {{/* ogni gruppo è un anno — il più recente per primo */}}
   <section class="log-year" id="{{ .Key }}">
     <h2><a href="#{{ .Key }}">{{ .Key }}</a></h2>
@@ -21,13 +22,31 @@
     {{ range .Pages.ByDate.Reverse }}
     <article class="log-entry" id="{{ .Params.month }}">
       <h3><a href="#{{ .Params.month }}">{{ .Title }}</a></h3>
+      {{ $entry := . }}
       {{ with .Params.image }}
-      <img src="{{ . | relURL }}" alt="{{ $.Params.image_alt }}" loading="lazy">
+      <img src="{{ . | relURL }}" alt="{{ $entry.Params.image_alt }}" loading="lazy">
       {{ end }}
       <div class="content">{{ .Content }}</div>
     </article>
     {{ end }}
 
+  </section>
+  {{ end }}
+
+  {{ if gt (len $groups) 1 }}
+  <section class="log-archives">
+    <h3>Archivi</h3>
+    <p>
+      {{- $years := slice -}}
+      {{- range $groups -}}{{- $years = $years | append .Key -}}{{- end -}}
+      Vedi gli archivi del log per <br>
+      {{- range $i, $year := $years -}}
+        {{- if gt $i 0 -}}
+          {{- if eq $i (sub (len $years) 1) -}} • {{- else -}}, {{- end -}}
+        {{- end -}}
+        <a href="#{{ $year }}">{{ $year }}</a>
+      {{- end -}}.
+    </p>
   </section>
   {{ end }}
 

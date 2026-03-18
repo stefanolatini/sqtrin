@@ -14,7 +14,7 @@ Riccardo  a.k.a. [**Meru**](https://github.com/merumerutho) isn't just a prolifi
 
 > STC: Hello there!
 > MERU: ..??..
-> STC: What's your hardware/software specs, and why did you chose it?
+> STC: What's your hardware/software specs, and why did you choose it?
 > MERU: ..??..
 > STC: Are there any other music instruments outside of the GameBoy? Were you born as electronic musician?
 > MERU: ..??..
