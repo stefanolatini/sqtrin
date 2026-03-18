@@ -41,7 +41,3 @@ theme = "sqtrin"
     name = "articles"
     url = "/articles/"
     weight = 6
-  [[menus.main]]
-    name = "log"
-    url = "/log/"
-    weight = 7

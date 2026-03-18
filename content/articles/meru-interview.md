@@ -4,8 +4,8 @@ date: 2026-03-11
 description: "Interview with Meru(meutochan)"
 ---
 
-![image](/sqtrin/media/content/meru-tq4.jpg)
-Meru performing during _Terrore Quadrato_ @Trentaformiche
+![image](/sqtrin/media/content/meru-tq5.jpg)
+_Meru performing during [**Terrore Quadrato 5**](/sqtrin/events/5.0/) @Trentaformiche_
 
 Riccardo  a.k.a. [**Meru**](https://github.com/merumerutho) isn't just a prolific and experimental musician, he's a brillant coder and polyedric artist super active in the micromusic/visual worldwide scene; Oh, he's also a good friend and a super kind person :3 
 
@@ -28,15 +28,18 @@ Riccardo  a.k.a. [**Meru**](https://github.com/merumerutho) isn't just a prolifi
 ```
 
 ![image](/sqtrin/media/content/meru-b00l-tq5.png)
-Meru and b00leant performing during _Terrore Quadrato_ @Trentaformiche
+_Meru and b00leant performing during [**Terrore Quadrato 4**](/sqtrin/events/5.0/) @Trentaformiche_
 
 
 ```interview
 > STC: Chiptune isn't cheap anymore, and as collective we believe that inflation of the retrogaming devices is making less approachable the chiptune. Since a GameBoy DMG cost floats around 100 bucks, what is your prevision about the future of this genre? 
 > MERU: ..??..
-> STC: Can you tell us about your vjing software development?
+> STC: Can you tell us about your vjing software development? 
+> MERU ..??..
+> STC: Micromusic or microvisual, which one has the most active scene?
 > MERU: ..??..
-> 
+> STC: Can you smell the fear of losing interest in chiptune hardware? One day you wake up and you'll be surrounded by modular patches with no TENSY or GBA.  
+> MERU: ..??..
 
 /////////////////////////
 ```
