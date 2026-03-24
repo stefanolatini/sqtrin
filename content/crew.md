@@ -28,11 +28,15 @@ In calmer settings, in addition to creating photographic zines, she produces lar
 
 ![image](/sqtrin/media/content/ick-birra.jpg "avatar")
 
-TODO DESCRIPTION
+Ick_ is an attempt to break the Chiptune/Video Game binary and everything that comes with it. Its sound is dirty and aggressive, breaking away from the mainstream melodic and upbeat 8-Bit music. It ranges from techno to gabber, but, coming from hardcore, always with a punk attitude. Ick_ is proof that even an old 1985 Gameboy can be a weapon.
 
 ## b00leant
 
-TODO DESCRIPTION
+b00leant took shape in 2017, exploring various fields of cyber art.
+With Square Terror, he pursues an unconventional chiptune approach, seeking to destroy the cheerful retro imagery that lies behind 8-bit music.
+His sound is predominantly techno, ranging from sharp and rotten sounds to more hypnotic and dark rhythms.
+
+With Square Terror, he pursues live coding projects, dissemination/workshops, and artistic performances.
 
 ## slipped bit
 
