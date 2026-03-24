@@ -4,7 +4,7 @@ date: 2026-03-24
 event_date: "2026-04-10"
 image: "/sqtrin/media/content/home.jpg"
 location: "Italy"
-description: "3 days around with XCOPYPRO"
+description: ""
 ---
 
 ## Dates
