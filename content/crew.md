@@ -32,6 +32,8 @@ Ick_ is an attempt to break the Chiptune/Video Game binary and everything that c
 
 ## b00leant
 
+![image](/sqtrin/media/content/b00leant-pro.jpg "avatar")
+
 b00leant took shape in 2017, exploring various fields of cyber art.
 With Square Terror, he pursues an unconventional chiptune approach, seeking to destroy the cheerful retro imagery that lies behind 8-bit music.
 His sound is predominantly techno, ranging from sharp and rotten sounds to more hypnotic and dark rhythms.

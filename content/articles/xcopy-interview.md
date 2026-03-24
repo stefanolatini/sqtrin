@@ -1,6 +1,6 @@
 ---
 title: "Line out: XCopyPro"
-date: 2026-03-11
+date: 2027-03-11
 description: "Interview for the Italian Micro Damage Tour 2026"
 ---
 
@@ -37,6 +37,8 @@ Finally we got it! After several tries we finally booked a mini-tour with this c
 > XCOPYPRO: ..??..
 > STC: Your tracks and livesets range from House to DNB, from Hardtechno to Jungle; We suppose it's a personal to be versatile, but what's your favourite direction in all these styles?
 > XCOPYPRO: ..??..
+> STC: Do you identify more with the definition of DJ or producer? Is your approach similar to a real tracks transcription? We still don't understand your way to compose. Is what you play a "new stuff" produced by you or is it "coverization"? Tell us about your playing/composing process.
+> XCOPYPRO: ..??..  
 
 /////////////////////////
 ```

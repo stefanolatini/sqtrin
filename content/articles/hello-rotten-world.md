@@ -1,6 +1,6 @@
 ---
 title: "Hello rotten world"
-date: 2025-01-12
+date: 2027-01-12
 description: "The death of internet"
 ---
 
