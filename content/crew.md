@@ -5,7 +5,6 @@ image: ""
 
 [**artemisia666**](#artemisia666), [**Ick_**](#ick_), [**b00leant**](#b00leant), [**slippedbit**](#slipped-bit), [**krish**](#krish),[**daimonchip**](#daimonchip) performs as different artists in different art forms.
 
-
 ## art_emisia666
 
 ![image](/sqtrin/media/content/viola666.png "avatar")
@@ -40,10 +39,6 @@ His sound is predominantly techno, ranging from sharp and rotten sounds to more 
 
 With Square Terror, he pursues live coding projects, dissemination/workshops, and artistic performances.
 
-## slipped bit
-
-TODO DESCRIPTION
-
 ## krish
 
 This is Krish. 
@@ -58,4 +53,11 @@ Does it work? Not entirely yet. There is still a lot of work to do, and he has o
 Is it a commercial project? Of course not. The software he is using is under the GPL license. He sends a huge thank you to Hundredrabbits and Trash80 for their incredible work.
 For now, the project exists only for the Game Boy Advance, but he plans to develop versions for the GBC/DMG as well. He chose to use AI-assisted coding because he has limited free time and wanted to conduct a personal experiment using AI for a project of this nature.
 
+## slipped bit
+
+TODO DESCRIPTION
+
+
 ## daimonchip
+
+TODO DESCRIPTION

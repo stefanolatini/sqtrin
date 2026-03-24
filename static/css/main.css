@@ -203,6 +203,7 @@ ul.nobull li {list-style-type: none}
 img.nodithering { image-rendering: pixelated; }
 
 img.avatar {
+  border: solid 2px white;
   width: 120px;
   height: 120px;
   border-radius: 50%;
