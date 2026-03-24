@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="icon" href="data:,">
+  <title>E:Q:2.0</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body {
+      background: #000;
+      overflow: hidden;
+      width: 100%; height: 100%;
+      touch-action: none;        /* blocca scroll/zoom su touch */
+      -webkit-overflow-scrolling: auto;
+    }
+    canvas { touch-action: none; display: block; cursor: pointer; }
+
+    /* ── modale base (condiviso) ── */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,.75);
+      z-index: 9999;
+      align-items: center;
+      justify-content: center;
+    }
+    .modal-overlay.visible { display: flex; }
+    .modal-box {
+      background: #000;
+      border: 1px solid #fff;
+      color: #fff;
+      font-family: monospace;
+      font-size: 0.8rem;
+      line-height: 1.7;
+      padding: 2.5rem 3rem;
+      max-width: 480px;
+      width: 90%;
+      text-align: center;
+    }
+    .modal-box h2 { font-size: 1.4rem; letter-spacing: .15em; margin-bottom: .5rem; }
+    .modal-box a  { color: #fff; text-decoration: underline; }
+    .modal-close {
+      display: block;
+      margin-top: 1.5rem;
+      font-size: .65rem;
+      opacity: .5;
+      cursor: pointer;
+    }
+
+    /* ── password prompt ── */
+    #pw-form {
+      display: flex;
+      gap: .5rem;
+      justify-content: center;
+      margin-top: 1.2rem;
+    }
+    #pw-input {
+      background: #000;
+      border: 1px solid #fff;
+      color: #fff;
+      font-family: monospace;
+      font-size: .9rem;
+      padding: .35rem .6rem;
+      width: 12rem;
+      outline: none;
+      text-align: center;
+      letter-spacing: .1em;
+    }
+    #pw-submit {
+      background: #000;
+      border: 1px solid #fff;
+      color: #fff;
+      font-family: monospace;
+      font-size: .9rem;
+      padding: .35rem .8rem;
+      cursor: pointer;
+    }
+    #pw-submit:hover { background: #fff; color: #000; }
+    #pw-error {
+      display: block;
+      margin-top: .6rem;
+      font-size: .7rem;
+      color: #f55;
+      min-height: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- password prompt -->
+  <div id="pw-overlay" class="modal-overlay" aria-modal="true" role="dialog">
+    <div class="modal-box">
+      <p>[ inserisci la password ]</p>
+      <form id="pw-form" autocomplete="off">
+        <input id="pw-input" type="password" spellcheck="false" autocomplete="new-password">
+        <button id="pw-submit" type="submit">→</button>
+      </form>
+      <span id="pw-error"></span>
+      <span class="modal-close" id="pw-close">[ annulla ]</span>
+    </div>
+  </div>
+
+  <!-- modale contatti -->
+  <div id="contact-overlay" class="modal-overlay" aria-modal="true" role="dialog">
+    <div class="modal-box">
+      <div id="contact-content"></div>
+      <span class="modal-close" id="contact-close">[ tap ovunque per chiudere ]</span>
+    </div>
+  </div>
+  <!-- 1. hydra-synth → 2. p5.js → 3. hy5.js (ordine obbligatorio) -->
+  <script src="https://unpkg.com/hydra-synth"></script>
+  <script src="https://metagrowing.org/extra-shaders-for-hydra/lib-noise.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+  <script src="hy5.js"></script>
+
+  <!-- contenuto cifrato (genera con: node encrypt-contact.js) -->
+  <script src="contact-encrypted.js"></script>
+
+  <!-- sketch (modifica questo file per il live-coding) -->
+  <script src="sketch.js"></script>
+
+  <script>
+    // ── decrypt AES-GCM (Web Crypto API) ────────────────────────────────────
+    async function decryptContact(blob, password) {
+      const parts = blob.split(':')
+      if (parts.length !== 3) throw new Error('blob non valido')
+      const fromB64 = s => Uint8Array.from(atob(s), c => c.charCodeAt(0))
+      const salt = fromB64(parts[0])
+      const iv   = fromB64(parts[1])
+      const ct   = fromB64(parts[2])
+      const enc  = new TextEncoder()
+      const km = await crypto.subtle.importKey(
+        'raw', enc.encode(password), 'PBKDF2', false, ['deriveKey']
+      )
+      const key = await crypto.subtle.deriveKey(
+        { name: 'PBKDF2', salt, iterations: 200_000, hash: 'SHA-256' },
+        km,
+        { name: 'AES-GCM', length: 256 },
+        false,
+        ['decrypt']
+      )
+      const plain = await crypto.subtle.decrypt({ name: 'AES-GCM', iv }, key, ct)
+      return new TextDecoder().decode(plain)
+    }
+
+    // ── elementi ─────────────────────────────────────────────────────────────
+    const pwOverlay      = document.getElementById('pw-overlay')
+    const pwForm         = document.getElementById('pw-form')
+    const pwInput        = document.getElementById('pw-input')
+    const pwError        = document.getElementById('pw-error')
+    const pwClose        = document.getElementById('pw-close')
+    const contactOverlay = document.getElementById('contact-overlay')
+    const contactContent = document.getElementById('contact-content')
+    const contactClose   = document.getElementById('contact-close')
+
+    // ── stato ─────────────────────────────────────────────────────────────────
+    // esposto a sketch.js per bloccare mouseClicked quando un modale è aperto
+    window.isModalOpen = () =>
+      pwOverlay.classList.contains('visible') ||
+      contactOverlay.classList.contains('visible')
+
+    // timestamp dell'ultima chiusura — sketch.js lo usa come debounce
+    window._modalClosedAt = 0
+
+    // ── password prompt ───────────────────────────────────────────────────────
+    window.showPasswordPrompt = function() {
+      if (!CONTACT_ENCRYPTED) {
+        alert('Contenuto non ancora cifrato.\nEsegui: node encrypt-contact.js')
+        return
+      }
+      pwError.textContent = ''
+      pwInput.value = ''
+      pwOverlay.classList.add('visible')
+      // autofocus rimandato per compatibilità mobile
+      setTimeout(() => pwInput.focus(), 80)
+    }
+
+    function hidePwPrompt() {
+      pwOverlay.classList.remove('visible')
+      pwInput.value = ''
+      pwError.textContent = ''
+      window._modalClosedAt = Date.now()
+    }
+
+    // submit password
+    pwForm.addEventListener('submit', async function(e) {
+      e.preventDefault()
+      const password = pwInput.value
+      if (!password) return
+      pwError.textContent = ''
+      pwInput.disabled = true
+      try {
+        const html = await decryptContact(CONTACT_ENCRYPTED, password)
+        hidePwPrompt()
+        contactContent.innerHTML = html
+        contactOverlay.classList.add('visible')
+      } catch (_) {
+        pwError.textContent = '✗ password errata'
+      } finally {
+        pwInput.disabled = false
+        pwInput.value = ''
+        pwInput.focus()
+      }
+    })
+
+    // chiudi password prompt cliccando sfondo o pulsante annulla
+    function _closePwIfBackground(e) {
+      e.preventDefault()   // blocca ghost-click su mobile
+      if (e.target === pwOverlay || e.target === pwClose) hidePwPrompt()
+    }
+    pwOverlay.addEventListener('pointerup', _closePwIfBackground)
+
+    // ── contact modal ─────────────────────────────────────────────────────────
+    function hideContactModal() {
+      contactOverlay.classList.remove('visible')
+      window._modalClosedAt = Date.now()
+    }
+
+    function _closeContactIfBackground(e) {
+      e.preventDefault()   // blocca ghost-click su mobile
+      if (e.target === contactOverlay || e.target === contactClose) hideContactModal()
+    }
+    contactOverlay.addEventListener('pointerup', _closeContactIfBackground)
+
+    // chiudi con Escape
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') { hidePwPrompt(); hideContactModal() }
+    })
+
+    // ── blocca scroll/bounce iOS ──────────────────────────────────────────────
+    // Safari su iOS ignora overflow:hidden sul body per lo scroll elastico;
+    // l'unico modo affidabile è preventDefault su touchmove a livello document.
+    // Permettiamo il touch solo all'interno dei modali (es. lista scrollabile).
+    document.addEventListener('touchmove', function(e) {
+      const inModal = e.target.closest('.modal-box')
+      if (!inModal) e.preventDefault()
+    }, { passive: false })
+
+    // blocca anche il doppio-tap che fa zoom su Safari
+    document.addEventListener('touchstart', function(e) {
+      if (e.touches.length > 1) e.preventDefault()
+    }, { passive: false })
+  </script>
+</body>
+</html>
