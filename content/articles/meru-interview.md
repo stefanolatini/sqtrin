@@ -7,7 +7,7 @@ description: "Interview with Meru(meutochan)"
 ![image](/sqtrin/media/content/meru-tq5.jpg)
 _Meru performing during [**Terrore Quadrato 5**](/sqtrin/events/5.0/) @Trentaformiche_
 
-Riccardo  a.k.a. [**Meru**](https://github.com/merumerutho) isn't just a prolific and experimental musician, he's a brillant coder and polyedric artist super active in the micromusic/visual worldwide scene; Oh, he's also a good friend and a super kind person :3 
+Riccardo  a.k.a. [**Meru**](https://github.com/merumerutho) isn't just a prolific and experimental musician, he's a brillant coder and polyedric artist super active in the micromusic/visual worldwide scene (go and see [**LOVJ**](https://github.com/merumerutho/LOVJ)); Oh, he's also a good friend and a super kind person :3 
 
 ```interview
 /////////////////////////
@@ -42,7 +42,7 @@ _Meru and b00leant performing during [**Terrore Quadrato 4**](/sqtrin/events/5.0
 ```interview
 > STC: Chiptune isn't cheap anymore, and as collective we believe that inflation of the retrogaming devices, semiconductor crisis and turbo-capitalism is making micromusic a less approachable discipline. Since a GameBoy DMG cost floats around 100 bucks, what is your prevision about the future of this genre? 
 > MERU: ..??..
-> STC: Can you tell us about your vjing software development? What is [**LOVJ**](https://github.com/merumerutho/LOVJ)?
+> STC: Can you tell us about your vjing software development? What is LOVJ?
 > MERU ..??..
 > STC: Micromusic or microvisual, which one has the most active scene?
 > MERU: ..??..
