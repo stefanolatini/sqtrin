@@ -1,7 +1,7 @@
 ---
 title: "Line out: Meru"
 date: 2026-03-24
-description: "Interview with Meru(meutochan)"
+description: "Interview with Meru(merutochan)"
 ---
 
 ![image](/sqtrin/media/content/meru-tq5.jpg)
