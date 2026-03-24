@@ -9,5 +9,5 @@ description: ""
 
 2nd day of touring with XCOPYPRO, sharing the stage with lots of great djs and producers.  
 
--> [see here]('/sqtrin/eq2')
+-> [see here](/sqtrin/eq2)
 
