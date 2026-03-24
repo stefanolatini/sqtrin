@@ -2,7 +2,7 @@
 title: "Errore Quadrato 2.0"
 date: 2026-03-24
 event_date: "2026-04-11"
-image: "/sqtrin/media/content/home.jpg"
+image: "/sqtrin/media/content/making.png"
 location: "Secret Location"
 description: ""
 ---
