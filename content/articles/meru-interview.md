@@ -33,10 +33,11 @@ After a while we invited you in the first edition of Terrore Quadrato and that's
 What are your feelings about it? Have you noticed any difference during the progression of our festivals and in our attitude?
 > MERU: ..??..
 > STC: Have you ever played in a b2b set? It would be intresting to see you managing a combo session with another musician or dj.
+> MERU: ..??..
 ```
 
 ![image](/sqtrin/media/content/meru-b00l-tq5.png)
-_Meru and b00leant performing during [**Terrore Quadrato 4**](/sqtrin/events/5.0/) @Trentaformiche_
+_Meru and b00leant performing during [**Terrore Quadrato 5**](/sqtrin/events/5.0/) @Trentaformiche_
 
 
 ```interview
