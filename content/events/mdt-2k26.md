@@ -29,5 +29,7 @@ In Rome the underground scene is suffering, common spaces, CSOA, Squatts are afr
 What happened it's a miracle in terms of organization.
 We were organizing the Terrore Quadrato 6.0 in ZK and after a while that place we used called home was gone forever.
 
+<!--
 ## The Making 
-We decided to resist and go for a mini-tour even without the possibility to let XCOPY to play in Rome, because of the delicate politics situation.
+We decided to resist and go for a mini-tour even without the possibility to let XCOPY play in Rome, because of the delicate politics situation.
+-->
