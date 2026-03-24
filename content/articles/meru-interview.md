@@ -1,6 +1,6 @@
 ---
 title: "Line out: Meru"
-date: 2027-03-11
+date: 2026-03-24
 description: "Interview with Meru(meutochan)"
 ---
 

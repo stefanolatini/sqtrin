@@ -1,6 +1,6 @@
 ---
 title: "Line out: XCopyPro"
-date: 2027-03-11
+date: 2026-03-24
 description: "Interview for the Italian Micro Damage Tour 2026"
 ---
 
@@ -42,7 +42,7 @@ Finally we got it! After several tries we finally booked a mini-tour with this c
 
 /////////////////////////
 ```
-
+<!--
 ## After we met
 
 So, we wrote down this questions as we also don't know what would be stay togheter for a week. A total black box.
@@ -61,3 +61,4 @@ So, we wrote down this questions as we also don't know what would be stay toghet
 
 /////////////////////////
 ```
+-->
