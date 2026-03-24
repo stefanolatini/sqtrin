@@ -2,7 +2,7 @@
 title: "Micro Damage Tour 2k26"
 date: 2026-03-24
 event_date: "2026-04-10"
-image: "/sqtrin/media/content/home.jpg"
+image: ""
 location: "Italy"
 description: ""
 ---
