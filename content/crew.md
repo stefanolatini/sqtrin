@@ -7,7 +7,7 @@ image: ""
 
 ## art_emisia666
 
-![image](/sqtrin/media/content/viola666.png "avatar")
+![image](/sqtrin/media/content/artemisia666.png "avatar")
 
 The one and only video output of STC. At the beginning of 2025 she entered the collective as GB photozine maker.
 
