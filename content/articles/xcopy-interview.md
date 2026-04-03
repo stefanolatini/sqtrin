@@ -79,7 +79,7 @@ It all began during the pandemic, and somehow it just kept going. It turned into
 
 On our server, we share samples, a lot of our own productions, finished tracks, retracks, VIP versions, and just a huge amount of music in general. It’s impossible to mention everyone involved, but I’ll try to highlight some of the key players, and apologies in advance if I miss anyone.
 
-From the DJ core: !cyke, DJ NEST, DJ Nicci Dee, Amiga Junglism, breakbob, cTrix, Ghaleon, Tytus, h0ffman, Quaad, Si Goes Retro, Snakebyte64, Stekker, Teo, RAV, and last but not least, in my opinion absolutely crucial to building this community, the unstoppable and brilliant Xtra Spice Mikey.
+From the DJ core: !cyke, DJ NEST, DJ Nicci Dee, Amiga Junglism, breakbob, cTrix, Ghaleon, Tytus, [h0ffman](https://hoffman.bandcamp.com/), Quaad, Si Goes Retro, Snakebyte64, Stekker, Teo, RAV, and last but not least, in my opinion absolutely crucial to building this community, the unstoppable and brilliant Xtra Spice Mikey.
 
 
 > STC: Is there any micromusic/chiptune environment in Poland?

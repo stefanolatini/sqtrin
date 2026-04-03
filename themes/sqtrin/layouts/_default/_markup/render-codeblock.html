@@ -1,7 +1,7 @@
 {{- if eq .Type "interview" -}}
 <div class="interview">
   {{- range (split .Inner "\n") -}}
-    {{- if . -}}<p>{{ . }}</p>{{ end }}
+    {{- if . -}}<p>{{ . | replaceRE `\[([^\]]+)\]\(([^)]+)\)` `<a href="$2">$1</a>` | safeHTML }}</p>{{ end }}
   {{- end -}}
 </div>
 {{- else -}}
