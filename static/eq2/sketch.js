@@ -6,7 +6,7 @@ noize().out()
 let lay1
 
 // testo fisso: [riga sopra, riga sotto]
-const textFixed = ['12 HOURS TECHNO & MICROMUSIC PARTY WITH', '11.04.2K26 - 18:00 - CLICK/TAP FOR INFO\nSECRET LOCATION - FREE CAMPING']
+const textFixed = ['12 HOURS TECHNO & MICROMUSIC PARTY WITH', '11.04.2K26 - 18:00 - TAP FOR INFO\nITRI @ KEMP RENT - FREE CAMPING']
 const title = 'ERRORE QUADRATO 2.0'
 
 // // substring cliccabile all'interno di textFixed[1]
