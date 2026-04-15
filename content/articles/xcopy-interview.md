@@ -9,7 +9,6 @@ Finally we got it! After several tries we finally booked a mini-tour with this c
 
 ## Before we met
 
-
 ```interview
 /////////////////////////
 
@@ -115,7 +114,7 @@ So what I play is a mix, some of it is my own productions, some of it is other p
 
 /////////////////////////
 ```
-<!--
+
 ## After we met
 
 So, we wrote down this questions as we also don't know what would be stay togheter for a week. A total black box.
@@ -139,4 +138,4 @@ ALSO XCOPY WANTED TO THANK US IN ITALIAN:
 
 > XCOPY: Grazie davvero, è stata un’intervista super! Le domande sono state tra le migliori e più azzeccate che abbia mai ricevuto. Davvero, grazie di cuore!
 ```
--->
+
