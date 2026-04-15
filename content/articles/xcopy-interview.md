@@ -42,9 +42,8 @@ So no, I wasn’t “born” as an electronic musician. It was more like a gradu
 
 ```
 
-![image](/media/content/mini-amiga.jpgeg)
-
-This is the super portable setup that XCOPY build for our mini-tour, crazy!
+![image](/media/content/mini-amiga.jpeg)
+_This is the super portable setup that XCOPY build for our mini-tour, *crazy*!_
 
 ```interview
 
