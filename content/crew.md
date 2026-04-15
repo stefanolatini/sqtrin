@@ -7,11 +7,11 @@ image: ""
 
 ## art_emisia666
 
-![image](/sqtrin/media/content/artemisia666.png "avatar")
+![image](/media/content/artemisia666.png "avatar")
 
 The one and only video output of STC. At the beginning of 2025 she entered the collective as GB photozine maker.
 
-![image](/sqtrin/media/content/artemisiapic-6.png)
+![image](/media/content/artemisiapic-6.png)
 
 We discovered a way to convert raw bitmap GameboyCamera images from GameBoy to .png files thanks to mofosyne’s’[arduino–gameboy-printer-emulator](https://mofosyne.github.io/arduino-gameboy-printer-emulator/);
 Once the convertion was done, she started to work on her photozines.
@@ -25,13 +25,13 @@ In calmer settings, in addition to creating photographic zines, she produces lar
 
 ## Ick_
 
-![image](/sqtrin/media/content/ick-birra.jpg "avatar")
+![image](/media/content/ick-birra.jpg "avatar")
 
 Ick_ is an attempt to break the Chiptune/Video Game binary and everything that comes with it. Its sound is dirty and aggressive, breaking away from the mainstream melodic and upbeat 8-Bit music. It ranges from techno to gabber, but, coming from hardcore, always with a punk attitude. Ick_ is proof that even an old 1985 Gameboy can be a weapon.
 
 ## b00leant
 
-![image](/sqtrin/media/content/b00leant-pro.jpg "avatar")
+![image](/media/content/b00leant-pro.jpg "avatar")
 
 b00leant took shape in 2017, exploring various fields of cyber art.
 With Square Terror, he pursues an unconventional chiptune approach, seeking to destroy the cheerful retro imagery that lies behind 8-bit music.

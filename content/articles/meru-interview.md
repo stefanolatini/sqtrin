@@ -4,8 +4,8 @@ date: 2026-03-24
 description: "Interview with Meru(merutochan)"
 ---
 
-![image](/sqtrin/media/content/meru-tq5.jpg)
-_Meru performing during [**Terrore Quadrato 5**](/sqtrin/events/5.0/) @Trentaformiche_
+![image](/media/content/meru-tq5.jpg)
+_Meru performing during [**Terrore Quadrato 5**](/events/5.0/) @Trentaformiche_
 
 Riccardo  a.k.a. [**Meru**](https://github.com/merumerutho) isn't just a prolific and experimental musician, he's a brillant coder and polyedric artist super active in the micromusic/visual worldwide scene (go and see [**LOVJ**](https://github.com/merumerutho/LOVJ)); Oh, he's also a good friend and a super kind person :3 
 
@@ -36,8 +36,8 @@ What are your feelings about it? Have you noticed any difference during the prog
 > MERU: ..??..
 ```
 
-![image](/sqtrin/media/content/meru-b00l-tq5.png)
-_Meru and b00leant performing during [**Terrore Quadrato 5**](/sqtrin/events/5.0/) @Trentaformiche_
+![image](/media/content/meru-b00l-tq5.png)
+_Meru and b00leant performing during [**Terrore Quadrato 5**](/events/5.0/) @Trentaformiche_
 
 
 ```interview

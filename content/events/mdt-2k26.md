@@ -17,7 +17,7 @@ description: ""
 
 One year ago, we put our eyes on this talented and super stylish Micromusic DJ/Producer on Amiga Commodore from Poland, his name is XCOPYPRO.
 
-Two years ago we asked him to come in Rome for a single shot gig, potentially what became the [TQ5](/sqtrin/events/5.0).
+Two years ago we asked him to come in Rome for a single shot gig, potentially what became the [TQ5](/events/5.0).
 A lot of bad, bad events in our life (his and ours) led us to quit the idea of this, hoping for a next year's promise.
 
 ## The Nightmare

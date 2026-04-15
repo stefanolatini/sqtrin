@@ -1,25 +1,25 @@
-baseURL = "https://stefanolatini.github.io/sqtrin/"
+baseURL = "https://squareterrorcollective.it/"
 languageCode = "en-EN"
 title = "Square Terror Collective"
 theme = "sqtrin"
 
 [params]
   description = "Descrizione del collettivo"
-  thumbnail2 = "/sqtrin/media/services/rss.jpg"
+  thumbnail2 = "/media/services/rss.jpg"
   rss = "/index.xml"
-  favicon = "/sqtrin/media/interface/square-fav.png"
-  thumbnail = "/sqtrin/media/interface/square-fav.png"
-  square = "/sqtrin/media/interface/square.png"
-  logo = "/sqtrin/media/interface/logo.png"
+  favicon = "/media/interface/square-fav.png"
+  thumbnail = "/media/interface/square-fav.png"
+  square = "/media/interface/square.png"
+  logo = "/media/interface/logo.png"
   author = "square_terror"
   [params.license]
     name = "BY-NC-SA 4.0"
-    url = "/sqtrin/LICENSE"
+    url = "/LICENSE"
 
 [menus]
   [[menus.main]]
     name = "home"
-    url = "/sqtrin/"
+    url = "/"
     weight = 1
   [[menus.main]]
     name = "events"

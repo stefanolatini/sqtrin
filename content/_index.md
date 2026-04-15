@@ -1,6 +1,6 @@
 ---
 title: "home"
-image: "/sqtrin/media/content/home.jpg"
+image: "/media/content/home.jpg"
 image_alt: "photo of Matias Biglieri during Terrore Quadrato 5.0 @Trentaformiche"
 ---
 

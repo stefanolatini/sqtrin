@@ -15,7 +15,7 @@
   {{ $logPages := where site.RegularPages "Section" "log" }}
   {{ if $logPages }}
   <section class="log">
-    <h2 id="log"><a href="/sqtrin/log">Log</a></h2>
+    <h2 id="log"><a href="/log">Log</a></h2>
     {{ with site.Params.rss }}
     <p class="log-rss">Aggiornamenti via <a href="{{ . }}">RSS</a>.</p>
     {{ end }}

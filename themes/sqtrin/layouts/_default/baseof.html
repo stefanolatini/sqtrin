@@ -8,10 +8,10 @@
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
   {{ with site.Params.thumbnail }}<meta name="thumbnail" content="{{ . | absURL }}">{{ end }}
   {{ with site.Params.rss }}<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="{{ . | relURL }}">{{ end }}
-  <link rel="icon" type="image/x-icon" href="{{ "/sqtrin/media/interface/favicon.ico" | relURL }}">
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ "/sqtrin/media/interface/favicon-32x32.png" | relURL }}">
-  <link rel="icon" type="image/png" sizes="16x16" href="{{ "/sqtrin/media/interface/favicon-16x16.png" | relURL }}">
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ "/sqtrin/media/interface/apple-touch-icon.png" | relURL }}">
+  <link rel="icon" type="image/x-icon" href="{{ "/media/interface/favicon.ico" | relURL }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ "/media/interface/favicon-32x32.png" | relURL }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ "/media/interface/favicon-16x16.png" | relURL }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ "/media/interface/apple-touch-icon.png" | relURL }}">
   <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
   {{ with site.Params.favicon }}<link rel="shortcut icon" type="image/png" href="{{ . | relURL }}">{{ end }}
 </head>
@@ -120,7 +120,7 @@
 
     {{/* Nav visibile: logo come home, link stile h3, separati da • */}}
     <nav class="main-nav" aria-hidden="true">
-      <a href="{{ "/sqtrin" | relURL }}" class="nav-home{{ if $.IsHome }} active{{ end }}" aria-label="{{ site.Title }}">
+      <a href="{{ "/" | relURL }}" class="nav-home{{ if $.IsHome }} active{{ end }}" aria-label="{{ site.Title }}">
         {{ with site.Params.square }}
         <img src="{{ . | relURL }}" alt="{{ site.Title }}" class="nodithering" width="30" height="30">
         {{ else }}
