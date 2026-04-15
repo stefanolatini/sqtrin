@@ -9,9 +9,9 @@ description: ""
 
 ## Dates
 
-- 10.04 - Naples @[Terzo Piano Autogestito](https://www.ecn.org/terzopiano/home/chi_siamo.html)
-- 11.04 - Secret Show @Secret Location
-- 13.04 - Rome @[Rhizome](https://zero.eu/it/luoghi/312959-rhizome,roma/)
+- 10/04 ~ Naples @[Terzo Piano Autogestito](https://www.ecn.org/terzopiano/home/chi_siamo.html)
+- 11/04 ~ Secret Show @Secret Location
+- 13/04 ~ Rome @[Rhizome](https://zero.eu/it/luoghi/312959-rhizome,roma/)
 
 ## The first proposal
 
