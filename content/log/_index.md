@@ -2,4 +2,5 @@
 title: "Log"
 ---
 
-Aggiornamenti mensili del collettivo. Puoi seguirci tramite il nostro [feed RSS](/index.xml).
+Monthly updates.
+<!-- Puoi seguirci tramite il nostro [feed RSS](/index.xml). -->
