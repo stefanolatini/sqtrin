@@ -4,7 +4,7 @@ title = "Square Terror Collective"
 theme = "sqtrin"
 
 [params]
-  description = "Descrizione del collettivo"
+  description = "Square Terror Collective"
   thumbnail2 = "/media/services/rss.jpg"
   rss = "/index.xml"
   favicon = "/media/interface/square-fav.png"
