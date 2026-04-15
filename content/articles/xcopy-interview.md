@@ -1,7 +1,8 @@
 ---
 title: "Line out: XCOPY"
 date: 2026-03-24
-description: "Interview for the Italian Micro Damage Tour 2026"
+image: "/media/content/xcopy.jpeg"
+description: "Interview before/after the tour"
 ---
 
 Finally we got it! After several tries we finally booked a mini-tour with this crazy, CRAZY artist from Poznań, Poland.
@@ -39,6 +40,13 @@ Part of it was also practical, I didn’t have much money, and cassettes were th
 
 So no, I wasn’t “born” as an electronic musician. It was more like a gradual mutation, from punk, to tapes, to machines.
 
+```
+
+![image](/media/content/mini-amiga.jpgeg)
+
+This is the super portable setup that XCOPY build for our mini-tour, crazy!
+
+```interview
 
 > STC: Why 2 Amigas and not one single Tracker? Do you like the "dj attitude" of mixing your own tracks? Do you provide any syncronizazion feature between them (audio midi-clock..)
 

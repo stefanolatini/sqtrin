@@ -1,7 +1,7 @@
 ---
 title: "MicroDamageTour 2k25"
-date: 2022-03-12
-event_date: "2022-01-25"
+date: 2025-01-25
+event_date: "2025-01-25"
 image: "/media/content/mdt2k25.png"
 location: ""
 description: ""
