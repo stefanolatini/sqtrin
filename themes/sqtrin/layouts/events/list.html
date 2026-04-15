@@ -23,15 +23,24 @@
 
   {{ if $upcoming }}
   <h2>Upcoming</h2>
-  <ul class="event-items items">
+  <ul class="grid-events">
     {{ range $upcoming }}
-    <li>
-      <p>
-        <span class="item-date">[{{ dateFormat "02.01.2006" (time .Params.event_date) }}]</span> -
-        <span class="item-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></span>
-        <span class="item-title">@{{ .Params.location }}</span>
-      </p>
-      {{ with .Description }}<p>{{ . }}</p>{{ end }}
+    <li class="card-event">
+      <a href="{{ .RelPermalink }}">
+        {{ with .Params.image }}
+        <div class="event-image" style="background-image: url('{{ . }}');"></div>
+        {{ else }}
+        <div class="event-image event-image--empty"></div>
+        {{ end }}
+        <div class="event-info">
+          <h3>{{ .Title }}</h3>
+          <p class="event-meta">
+            {{ with .Params.event_date }}<span class="event-date">{{ dateFormat "02.01.2006" (time .) }}</span>{{ end }}
+            {{ with .Params.location }}<span class="event-location">@ {{ . }}</span>{{ end }}
+          </p>
+          {{ with .Description }}<p class="card-desc">{{ . }}</p>{{ end }}
+        </div>
+      </a>
     </li>
     {{ end }}
   </ul>
@@ -39,15 +48,24 @@
 
   {{ if $past }}
   <h2>Past</h2>
-  <ul class="event-items items">
+  <ul class="grid-events">
     {{ range $past }}
-    <li>
-      <p>
-        {{ with .Params.event_date }}<span class="item-date">[{{ dateFormat "02.01.2006" (time .) }}]</span> -{{ end }}
-        <span class="item-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></span>
-        <span class="item-title">@{{ .Params.location }}</span>
-      </p>
-      {{ with .Description }}<p>{{ . }}</p>{{ end }}
+    <li class="card-event">
+      <a href="{{ .RelPermalink }}">
+        {{ with .Params.image }}
+        <div class="event-image" style="background-image: url('{{ . }}');"></div>
+        {{ else }}
+        <div class="event-image event-image--empty"></div>
+        {{ end }}
+        <div class="event-info">
+          <h3>{{ .Title }}</h3>
+          <p class="event-meta">
+            {{ with .Params.event_date }}<span class="event-date">{{ dateFormat "02.01.2006" (time .) }}</span>{{ end }}
+            {{ with .Params.location }}<span class="event-location">@ {{ . }}</span>{{ end }}
+          </p>
+          {{ with .Description }}<p class="card-desc">{{ . }}</p>{{ end }}
+        </div>
+      </a>
     </li>
     {{ end }}
   </ul>

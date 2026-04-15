@@ -1,0 +1,22 @@
+{{ define "main" }}
+<section class="list">
+  {{ with .Content }}<div class="content">{{ . }}</div>{{ end }}
+
+  <ul class="grid-articles">
+    {{ range .Pages }}
+    <li class="card-article">
+      <a href="{{ .RelPermalink }}">
+        {{ with .Params.image }}
+        <div class="article-featured" style="background-image: url('{{ . }}');"></div>
+        {{ else }}
+        <div class="article-featured article-featured--empty"></div>
+        {{ end }}
+        <h3>{{ .Title }}</h3>
+      </a>
+      {{ with .Description }}<p class="card-desc">{{ . }}</p>{{ end }}
+      {{ with .Date }}<p class="card-date">{{ dateFormat "2006.01.02" . }}</p>{{ end }}
+    </li>
+    {{ end }}
+  </ul>
+</section>
+{{ end }}
