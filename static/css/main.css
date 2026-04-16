@@ -339,10 +339,11 @@ img.nodithering { image-rendering: pixelated; }
 
 img.avatar {
   border: solid 2px white;
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
+  /* width: 120px; */
+  height: 500px;
+  /* border-radius: 50%; */
   object-fit: cover;
+  object-position: center;
   display: block;
   filter: saturate(0.0);
 }
