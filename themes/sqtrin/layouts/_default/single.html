@@ -2,6 +2,7 @@
 <article class="page">
   <h1>{{ .Title }}</h1>
   {{ with .Description }}<h3 class="page-description">{{ . }}</h3>{{ end }}
+  {{ with .Params.author }}<span class="page-author">{{ . }}</span>{{ end }}
   {{ with .Params.image }}
       <img src="{{ . | relURL }}" width="100" height="100">
       {{ else }}
