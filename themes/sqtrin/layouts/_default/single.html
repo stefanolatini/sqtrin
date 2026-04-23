@@ -2,10 +2,6 @@
 <article class="page">
   <h1>{{ .Title }}</h1>
   {{ with .Description }}<h3 class="page-description">{{ . }}</h3>{{ end }}
-  <br>
-  {{ with .Params.author }}<span class="page-author">{{ . }}</span>{{ end }}
-  {{ with .Params.date }}<span class="date">{{ dateFormat "02.01.2006" (time .) }}</span>{{ end }}
-  <br>
   {{ with .Params.image }}
       <img src="{{ . | relURL }}" width="100" height="100">
       {{ else }}
@@ -45,4 +41,6 @@
   {{/* unica lingua: nessun toggle, nessun JS, il blocco è visibile di default */}}
   {{ end }}
 </article>
+  {{ with .Params.author }}<span class="page-author">/// {{ . }}, </span>{{ end }}
+  {{ with .Params.date }}<span class="date">{{ dateFormat "02.01.2006" (time .) }}</span>{{ end }}
 {{ end }}
