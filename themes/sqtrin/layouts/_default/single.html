@@ -2,26 +2,30 @@
 <article class="page">
   <h1>{{ .Title }}</h1>
   {{ with .Description }}<h3 class="page-description">{{ . }}</h3>{{ end }}
+  <br>
   {{ with .Params.author }}<span class="page-author">{{ . }}</span>{{ end }}
+  {{ with .Params.date }}<span class="date">{{ dateFormat "02.01.2006" (time .) }}</span>{{ end }}
+  <br>
   {{ with .Params.image }}
       <img src="{{ . | relURL }}" width="100" height="100">
       {{ else }}
       <!--<span class="logo-text">{{ site.Title }}</span>-->
       {{ end }}
-  {{ with .Params.langs }}
+  {{ if and .Params.langs (gt (len .Params.langs) 1) }}
   <div class="lang-toggle" aria-label="language selector">
-    {{ range . }}<button class="lang-btn" data-lang="{{ . }}">{{ . }}</button>{{ end }}
+    {{ range .Params.langs }}<button class="lang-btn" data-lang="{{ . }}">{{ . }}</button>{{ end }}
   </div>
   {{ end }}
   <div class="content">
     {{ .Content }}
   </div>
-  {{ with .Params.langs }}
+  {{ if and .Params.langs (gt (len .Params.langs) 1) }}
   <script>
   (function(){
-    var langs = {{ . | jsonify }};
+    var langs = {{ .Params.langs | jsonify }};
+    var defaultLang = {{ with .Params.lang_default }}{{ . | jsonify }}{{ else }}null{{ end }};
     var saved = localStorage.getItem('sq-lang');
-    var active = (saved && langs.indexOf(saved) !== -1) ? saved : langs[0];
+    var active = defaultLang || (saved && langs.indexOf(saved) !== -1 ? saved : langs[0]);
     function activate(lang) {
       document.querySelectorAll('.lang-block').forEach(function(el){
         el.hidden = el.dataset.lang !== lang;
@@ -37,6 +41,8 @@
     activate(active);
   })();
   </script>
+  {{ else if .Params.langs }}
+  {{/* unica lingua: nessun toggle, nessun JS, il blocco è visibile di default */}}
   {{ end }}
 </article>
 {{ end }}

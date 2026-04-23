@@ -1,6 +1,6 @@
 ---
 title: "Synchronizer"
-date: 2026-04-16
+date: 2026-04-23
 author: "b00leant"
 image: "/media/content/synchronizer.png"
 description: "A double-fork, clock star adapter for DMG/GBC"
