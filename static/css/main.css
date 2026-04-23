@@ -335,6 +335,46 @@ ul.nobull li {list-style-type: none}
 }
 
 
+/* ── Language toggle ────────────────────────────────────────── */
+
+.lang-toggle {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 28px;
+}
+
+.lang-btn {
+  background: transparent;
+  border: 2px solid black;
+  color: black;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 4px 14px;
+  border-radius: 200px;
+  cursor: pointer;
+  letter-spacing: 0.08em;
+  transition: background 0.1s, color 0.1s;
+}
+
+.lang-btn.active,
+.lang-btn:hover {
+  background: black;
+  color: white;
+}
+
+@media (prefers-color-scheme: dark) {
+  .lang-btn {
+    border-color: white;
+    color: white;
+  }
+  .lang-btn.active,
+  .lang-btn:hover {
+    background: white;
+    color: black;
+  }
+}
+
 img.nodithering { image-rendering: pixelated; }
 
 img.avatar {

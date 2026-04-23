@@ -8,8 +8,35 @@
       {{ else }}
       <!--<span class="logo-text">{{ site.Title }}</span>-->
       {{ end }}
+  {{ with .Params.langs }}
+  <div class="lang-toggle" aria-label="language selector">
+    {{ range . }}<button class="lang-btn" data-lang="{{ . }}">{{ . }}</button>{{ end }}
+  </div>
+  {{ end }}
   <div class="content">
     {{ .Content }}
   </div>
+  {{ with .Params.langs }}
+  <script>
+  (function(){
+    var langs = {{ . | jsonify }};
+    var saved = localStorage.getItem('sq-lang');
+    var active = (saved && langs.indexOf(saved) !== -1) ? saved : langs[0];
+    function activate(lang) {
+      document.querySelectorAll('.lang-block').forEach(function(el){
+        el.hidden = el.dataset.lang !== lang;
+      });
+      document.querySelectorAll('.lang-btn').forEach(function(btn){
+        btn.classList.toggle('active', btn.dataset.lang === lang);
+      });
+      localStorage.setItem('sq-lang', lang);
+    }
+    document.querySelectorAll('.lang-btn').forEach(function(btn){
+      btn.addEventListener('click', function(){ activate(this.dataset.lang); });
+    });
+    activate(active);
+  })();
+  </script>
+  {{ end }}
 </article>
 {{ end }}
