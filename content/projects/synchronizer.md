@@ -19,4 +19,6 @@ Da qui è partita una divertente sessione di bricolage in cui è stata misurata 
 
 Ovviamente era doveroso marchiare il circuito stampato con un paio di decalcomanie per ribadire chi siamo, e sotto saggio consiglio di Ick_ e Artemisia666 un elegante foro per aumentarne l'indossabilità.
 
+Ecco il [link al progetto OSHPark]()
+
 {{< /lang >}}
