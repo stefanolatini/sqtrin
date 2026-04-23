@@ -126,7 +126,7 @@ So what I play is a mix, some of it is my own productions, some of it is other p
 
 So, we wrote down this questions as we also don't know what would be stay togheter for a week. A total black box.
 
-![image](/media/content/stcx.tga)
+![image](/media/content/stcx.png)
 
 ```interview
 /////////////////////////
