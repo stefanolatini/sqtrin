@@ -127,7 +127,7 @@ So what I play is a mix, some of it is my own productions, some of it is other p
 So, we wrote down this questions as we also don't know what would be stay togheter for a week. A total black box.
 
 ![image](/media/content/stcx.png)
-_From left to right: KriSh, Artemisia666, Ick_, XCOPY, b00leant_ (from our last day in Rhome at [Rhizome](https://www.rhizomerm.com/))
+*From left to right: **KriSh**, **Artemisia666**, **Ick_** , **XCOPY**, **b00leant_** (from our last day in Rhome at [Rhizome](https://www.rhizomerm.com/))*
 
 ```interview
 /////////////////////////
