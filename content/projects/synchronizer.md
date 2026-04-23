@@ -15,7 +15,7 @@ La prima sconvolgente notizia dopo la scoperta di questo progetto è stata quell
 
 Da qui è partita una divertente sessione di bricolage in cui è stata misurata accuratamente la dimensione del vano d'ingresso del cavo link DMG-04; è bastato riportare le giusta misure su KiDad, et voità, _«le Synchronizer!»_
 
-![image](/media/content/synchronizer2.png")
+![image](/media/content/synchronizer2.png)
 
 Ovviamente era doveroso marchiare il circuito stampato con un paio di decalcomanie per ribadire chi siamo, e sotto saggio consiglio di Ick_ e Artemisia666 un elegante foro per aumentarne l'indossabilità.
 
