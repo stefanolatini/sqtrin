@@ -127,7 +127,7 @@ So what I play is a mix, some of it is my own productions, some of it is other p
 So, we wrote down this questions as we also don't know what would be stay togheter for a week. A total black box.
 
 ![image](/media/content/stcx.png)
-*From left to right: **KriSh**, **Artemisia666**, **Ick_** , **XCOPY**, **b00leant_** (from our last day in Rhome at [Rhizome](https://www.rhizomerm.com/))*
+*From left to right: **KriSh**, **Artemisia666**, **Ick_** , **XCOPY**, **b00leant_** (from our last day in Rome at [Rhizome](https://www.rhizomerm.com/))*
 
 ```interview
 /////////////////////////
@@ -147,12 +147,8 @@ So, we wrote down this questions as we also don't know what would be stay toghet
 > STC: Sad to say but it's time to say goodbye! But we should say "Questo non è un addio, è un arrivederci!"
 
 > XCOPYPRO: Sono sicuro di aver trovato nuovi amici in Italia, ed è questo che porto con me da questo viaggio. Grazie di tutto, vi voglio bene!
+Grazie davvero, è stata un’intervista super! Le domande sono state tra le migliori e più azzeccate che abbia mai ricevuto. Davvero, grazie di cuore!
 
 /////////////////////////
-
-
-ALSO XCOPY WANTED TO THANK US IN ITALIAN:
-
-> XCOPY: Grazie davvero, è stata un’intervista super! Le domande sono state tra le migliori e più azzeccate che abbia mai ricevuto. Davvero, grazie di cuore!
 ```
 
