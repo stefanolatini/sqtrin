@@ -1,0 +1,38 @@
+{{ define "main" }}
+<section class="list">
+  {{ with .Content }}<div class="content">{{ . }}</div>{{ end }}
+
+  {{/* --- template con immagine anteprima (stile articles) --- */}}
+  <ul class="grid-articles">
+    {{ range .Pages }}
+    <li class="card-article">
+      <a href="{{ .RelPermalink }}">
+        {{ with .Params.image }}
+        <div class="article-featured" style="background-image: url('{{ . }}');"></div>
+        {{ else }}
+        <div class="article-featured article-featured--empty"></div>
+        {{ end }}
+        <h3>{{ .Title }}</h3>
+      </a>
+      {{ with .Description }}<p class="card-desc">{{ . }}</p>{{ end }}
+      {{ with .Date }}<p class="card-date">{{ dateFormat "2006.01.02" . }}</p>{{ end }}
+    </li>
+    {{ end }}
+  </ul>
+
+  {{/* --- vecchio template solo testuale ---
+  <h1>{{ .Title }}</h1>
+  <ul class="items">
+    {{ range .Pages }}
+    <li>
+      <a href="{{ .RelPermalink }}">
+        <span class="item-title">{{ .Title }}</span>
+        {{ with .Date }}<span class="item-date">{{ dateFormat "02.01.2006" . }}</span>{{ end }}
+      </a>
+      {{ with .Description }}<p class="item-description">// {{ . }}</p>{{ end }}
+    </li>
+    {{ end }}
+  </ul>
+  --- */}}
+</section>
+{{ end }}
