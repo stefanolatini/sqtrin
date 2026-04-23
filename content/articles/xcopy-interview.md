@@ -3,7 +3,12 @@ title: "Line out: XCOPY"
 date: 2026-03-24
 image: "/media/content/xcopy.jpeg"
 description: "Interview before/after the tour"
+langs: ["en"]
 ---
+
+
+
+{{< lang "en" >}}
 
 Finally we got it! After several tries we finally booked a mini-tour with this crazy, CRAZY artist from Poznań, Poland.
 [XCopyPro](https://xcopypro.bandcamp.com/) it's a producer, a dj, an Amiga DJ that in the last 6 years tried to bring the ProTracker experience to a totally different level.
@@ -151,4 +156,4 @@ Grazie davvero, è stata un’intervista super! Le domande sono state tra le mig
 
 /////////////////////////
 ```
-
+{{< /lang >}}
