@@ -126,17 +126,26 @@ So what I play is a mix, some of it is my own productions, some of it is other p
 
 So, we wrote down this questions as we also don't know what would be stay togheter for a week. A total black box.
 
+![image](/media/content/stcx.tga)
+
 ```interview
 /////////////////////////
 
-> STC: So, how are you afer these days spent together?
-> XCOPY: ..??..
+> STC: So, how are you after these days spent together?
+
+> XCOPYPRO: I felt like I was among very good friends. I could really absorb everything, the music, the beautiful warm days, and the traveling. There were lots of conversations, a lot of openness, shared thoughts and ideas, and many similarities between us.
+
 > STC: What was your best tour date? Naples/Itri/Rome?
-> XCOPY: ..??..
-> STC: Best fun facts that your remember about this tour?
-> XCOPY: ..??..
-> STC: Sad to say but it's time to say goodbye! But we should say _"Qusto non è un addio, è un arrivederci!"_ 
-> XCOPY: ..??..
+
+> XCOPYPRO: All three shows were unique, but I think we’ll remember Itri the most. I played there for about six hours in total. I started with a jungle warm-up, then played techno in the middle of the night from around 2 to 3:30, and later in the morning I did a b2b set with Fabio on his soundsystem for another couple of hours. I met some amazing people there, had great conversations, shared stories around the fire, and really felt the atmosphere of the place. As Stefano called it, “agrotechno.”
+
+> STC: Best fun facts that you remember about this tour?
+
+> XCOPYPRO: I really loved the moment when the whole STC crew was singing “Tutto il resto è noia” by Franco Califano at the top of their lungs in the car on the way to Naples. That was unforgettable. That song has been with me for the past few days back in Poland, I keep listening to it on my headphones. It brings back strong emotions and takes me right back to that moment. Beautiful experience.
+
+> STC: Sad to say but it's time to say goodbye! But we should say "Questo non è un addio, è un arrivederci!"
+
+> XCOPYPRO: Sono sicuro di aver trovato nuovi amici in Italia, ed è questo che porto con me da questo viaggio. Grazie di tutto, vi voglio bene!
 
 /////////////////////////
 
