@@ -64,7 +64,7 @@ nav.main-nav .nav-sep { font-size:20px; }
 main { padding: 0px 45px 45px 45px; max-width:900px; }
 main img { display:block; width:100%; height:auto; max-width: 900px; margin-bottom: 30px;}
 body.page_articles main img,
-body.page_projects main img { min-width: 500px; }
+body.page_projects main img { max-width: 600px; }
 main > * { max-width: 900px; margin-bottom: 30px }
 main > h1 { font-size:45px; text-transform: capitalize; display: none}
 main > h2 { font-size:30px; text-transform: capitalize}
