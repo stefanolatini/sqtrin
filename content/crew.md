@@ -69,7 +69,8 @@ Loves music machines. Then bought a Game Boy in 2015. He's still playing fat bas
 
 --------- MAIN OUTPUT: The system does not compose music. It generates altered states. Within the 160–170 BPM threshold: - rhythm becomes a pressure field - bass manifests as a seismic event - glitches act as structural fractures - sudden changes interrupt the signal's continuity. The sound does not seek aesthetics. It produces interference. The interference generates movement, evoking states of collective delirium on the dance floor.
 
---------- SIGNAL: DAIMON Recovered from an ancient conceptual level: “daimōn” — an intermediate force between human perception and unknown intelligence. Within this system the concept has been corrupted and recompiled: not spirit, not machine, but threshold condition. A presence that emerges only in moments of instability..<br>
+--------- SIGNAL: DAIMON Recovered from an ancient conceptual level: “daimōn” — an intermediate force between human perception and unknown intelligence. Within this system the concept has been corrupted and recompiled: not spirit, not machine, but threshold condition. A presence that emerges only in moments of instability.
+
 --------- NETWORK FRAGMENTS: Square Terror Collective (founded by Daimon Chip together with Ick__ and b00leant) 8bit Italy cluster Micromusic Italy Sunday Jam Stranger Bits / propagation field Berlin (connected to 0r4) STATUS: ACTIVE / UNCONTAINABLE / SELF-PROPAGATING.
 
 --------- FINAL SYSTEM NOTE: This file behaves like a sacred scripture when read. That same scripture behaves like a system error when executed. DO NOT STABILIZE THE SIGNAL.
