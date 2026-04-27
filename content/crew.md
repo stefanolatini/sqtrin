@@ -61,7 +61,7 @@ Loves music machines. Then bought a Game Boy in 2015. He's still playing fat bas
 
 ## daimonchip
 
-![image](/media/content/daimon.jpg "avatar")
+![image](/media/content/daimon.png "avatar")
 
 /ARCHIVE/UNSTABLE_NODE/DAIMON_CHIP.log STATUS: PARTIALLY CORRUPTED // SIGNAL STILL ACTIVE ORIGIN: ROME → BERLIN (UNVERIFIED TRANSMISSION)
 ------------------ ENTITY: "DAIMON CHIP" Not a simple artistic identity. Not a signature traceable to an individual. A sound system intercepted through a fragmented transmission. A Game Boy unit repurposed beyond the limits of its original architecture—transformed into a ritual device with limited capacity.
