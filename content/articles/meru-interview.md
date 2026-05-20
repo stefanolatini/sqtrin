@@ -2,7 +2,10 @@
 title: "Line out: Meru"
 date: 2027-03-24
 description: "Interview with Meru(merutochan)"
+langs: ["en"]
 ---
+
+{{< lang "en" >}}
 
 ![image](/media/content/meru-tq5.jpg)
 _Meru performing during [**Terrore Quadrato 5**](/events/5.0/) @Trentaformiche_
@@ -143,4 +146,6 @@ It's something that I definetely need at some point, but I prefer to keep it con
 
 /////////////////////////
 ```
+
+{{< /lang >}}
 

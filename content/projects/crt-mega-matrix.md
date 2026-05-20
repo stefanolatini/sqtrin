@@ -2,7 +2,10 @@
 title: "CRT MEGA MATRIX"
 date: 2026-09-12
 description: "Mosaico a tubo catodico"
+langs: ["it"]
 ---
+
+{{< lang "it" >}}
 
 # CRT MEGA MATRIX   
 
@@ -13,3 +16,5 @@ Sarà realizzato un muro composto da (numero variabile di) schermi a tubo catodi
 ## Ascoltare
 
 Stiamo decidendo se sonorizzare l'installazione
+
+{{< /lang >}}

@@ -2,7 +2,10 @@
 title: "Hello rotten world"
 date: 2027-01-12
 description: "The death of internet"
+langs: ["en"]
 ---
+
+{{< lang "en" >}}
 
 One year ago, me, Viola, Francesco found out that it's been a while since we're around in the underground electronic scene.
 Also we wanted to contribute with a different type of content that pushed our desire a bit away from music release.
@@ -25,4 +28,6 @@ Currently (as of early 2026), the three major cloud computing providers (AWS, Mi
 We MUST know and remember how Internet was born as a place of freedom of knowledge and expression.
 
 The concept of hyperlink has been replaced with a very virtual mask of it, I'll say _**hypolink**_, and data format is reduced to a dicothomic cage of Post/Story.
+
+{{< /lang >}}
 

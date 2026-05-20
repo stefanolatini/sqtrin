@@ -3,7 +3,7 @@ title: "Line out: XCOPY"
 date: 2026-03-24
 image: "/media/content/xcopy.jpeg"
 description: "Interview before/after the tour"
-langs: ["en"]
+langs: ["en","it"]
 ---
 
 
@@ -11,7 +11,7 @@ langs: ["en"]
 {{< lang "en" >}}
 
 Finally we got it! After several tries we finally booked a mini-tour with this crazy, CRAZY artist from Poznań, Poland.
-[XCopyPro](https://xcopypro.bandcamp.com/) it's a producer, a dj, an Amiga DJ that in the last 6 years tried to bring the ProTracker experience to a totally different level.
+[XCopyPro](https://xcopypro.bandcamp.com/) it's a producer, an Amiga DJ that in the last 6 years tried to bring the ProTracker experience to a totally different level.
 
 ## Before we met
 
@@ -153,6 +153,162 @@ So, we wrote down this questions as we also don't know what would be stay toghet
 
 > XCOPYPRO: Sono sicuro di aver trovato nuovi amici in Italia, ed è questo che porto con me da questo viaggio. Grazie di tutto, vi voglio bene!
 Grazie davvero, è stata un’intervista super! Le domande sono state tra le migliori e più azzeccate che abbia mai ricevuto. Davvero, grazie di cuore!
+
+/////////////////////////
+```
+{{< /lang >}}
+
+
+
+{{< lang "it" >}}
+
+Finalmente ce l'abbiamo fatta! Dopo diversi tentativi, siamo finalmente riusciti a prenotare un mini-tour con questo artista pazzo, PAZZISSIMO, da Poznań, Polonia.
+
+[XCopyPro](https://xcopypro.bandcamp.com/) è un produttore, un Amiga di Amiga Commodore che negli ultimi 6 anni ha cercato di portare l'esperienza ProTracker a un livello completamente diverso.
+
+## Prima del nostro incontro
+
+```interview
+/////////////////////////
+> STC: Ciao!
+
+> XCOPY: Ciao! Grazie mille per l’invito, è un vero piacere ;)
+
+> STC: Come è iniziato tutto? Come ti sei avvicinato alla micromusica? Eri un fan/ascoltatore prima di esibirti?
+
+> XCOPY: Ho iniziato piuttosto tardi con la scena Amiga. Il mio primo live set è stato nel 2020. Prima di allora, realizzavo collage sonori ed ero già profondamente interessato alla scena underground lowbit. Pubblicavo anche musica su floppy disk tramite la mia etichetta, Pionierska Records. Insieme al mio amico Zenial della demoscene polacca, che faceva parte della vecchia generazione dello swapping, abbiamo pubblicato alcune produzioni in stile demoscene classico.
+È così che è iniziato il mio viaggio con la demoscene e la musica Amiga. Prima di allora, ho sperimentato con la creazione di musica su calcolatrici e ho fatto qualcosa sul Game Boy, ma l'ho abbandonato abbastanza presto a favore di ProTracker su Amiga. Mi sembrava semplicemente più affine. Le mie radici affondano nella cultura Atari e Amiga degli anni '90.
+
+> STC: Quali sono le specifiche hardware/software e perché le hai scelte? Le hai modificate nel corso degli anni?
+
+> XCOPY: All'inizio volevo essere molto purista e fedele all'hardware originale, per questo ho comprato un altro Amiga e mi sono impegnato al massimo per ottenere risultati con quella configurazione. Ma col tempo ho capito che bisogna evolversi, soprattutto in termini di mobilità e praticità. Queste macchine sono molto delicate ora, anche gli Amiga ben tenuti non gradiscono i viaggi continui. E dato che non sono una persona ricca, ho dovuto ripensare a come viaggiare in modo efficiente.
+Viaggio principalmente in treno o in autobus e cerco di ridurre al minimo tutto, quindi ho iniziato a lavorare sulla configurazione più piccola possibile che mantenesse lo stesso flusso di lavoro. Ho provato soluzioni come Raspberry Pi, ma non hanno funzionato a causa di problemi di latenza.
+
+
+La vera svolta è arrivata quando ho preso l'Amiga 500 Mini e l'ho adattato alle mie esigenze, costruendo la mia postazione attorno ad esso, progettando e stampando in 3D un case personalizzato e usando piccoli schermi da 3,5 pollici. Ha funzionato alla perfezione (un grande grazie a Janek per la stampa).
+
+Ora sono completamente mobile e persino volare con compagnie low cost con solo bagaglio a mano non è più un problema per me.
+
+> STC: Ci sono altri strumenti musicali oltre all'Amiga? Sei nato musicista elettronico?
+
+> XCOPY: In passato ho registrato molto su cassette. A un certo punto facevo anche DJ set con cassette sotto il nome di Dolby, mixando e suonando usando le cassette. Viaggiavo molto e suonavo dal vivo in quel periodo, e le cassette sono diventate il mio primo vero amore.
+In parte era anche una questione pratica, non avevo molti soldi e le cassette erano il supporto più economico disponibile. Ma questa limitazione conferiva loro una sorta di energia punk, che mi si addiceva perfettamente. In realtà ho iniziato nella scena punk, suonando in diverse band, quindi tutto si è evoluto in modo abbastanza naturale e ha iniziato a fondersi.
+
+Quindi no, non sono "nato" musicista elettronico. È stata più una graduale evoluzione, dal punk, ai nastri, alle macchine.
+
+```
+
+![image](/media/content/mini-amiga.jpeg)
+_This is the super portable setup that XCOPY build for our mini-tour, *crazy*!_
+
+```interview
+![image](/media/content/mini-amiga.jpeg)
+_Questa è la configurazione super portatile che XCOPY ha creato per il nostro mini-tour, *pazzesca*!_
+
+```intervista
+
+> STC: Perché due Amiga e non un singolo Tracker? Ti piace l'approccio da DJ di mixare le tue tracce? Utilizzi qualche funzione di sincronizzazione tra di loro (audio, MIDI, clock...)?
+
+> XCOPY: No, non c'è alcuna sincronizzazione via cavo. Tutto viene fatto manualmente, si attivano, si regolano e si correggono le cose a mano in tempo reale. È un processo molto fisico.
+
+Il software che uso, PT1210, è in realtà piuttosto recente, risale al 2014 circa. Quindi non è qualcosa dell'epoca originale, ma una creazione moderna della demoscene. Onestamente, posso dire che grazie ai ragazzi di PT1210 la mia vita è cambiata molto, davvero molto.
+
+> STC: Da dove trai ispirazione? C'è un artista in particolare che ha influenzato il tuo stile?
+
+> XCOPY: Amo davvero le produzioni della demoscene e gran parte della mia ispirazione proviene dalle persone che mi circondano. Artisti come XSM, Amiga Junglism, Si Goes Retro, Teo, cTrix, Juice, Randall, Celsius, h0ffman, Dascon, TZX, Magiel, Lynn Drumm, Subi, DJ Nest, Mygg, Zenial, Skope, Qwan, Stekker, Jazzcat, Jammer, KK e anche amici come Tomarkus, Kalosz, Pator, Aceman, Dalthon, E!ghtBM, Dokthor, Dan e 2G1B, e molti altri.
+
+Consiglio vivamente di dare un'occhiata ai loro lavori, non solo ai moduli ma anche alle produzioni su altre piattaforme. Non si tratta solo di file MOD, ci sono anche cose incredibili realizzate con Adlib Tracker o su ZX Spectrum. Ad esempio, le tracce di Pator per ZX Spectrum sono oro puro, senza dubbio.
+
+
+Tutto quell'ecosistema è per me una fonte costante di ispirazione.
+
+> STC: Ritieni che l'estetica o lo stile siano importanti nei limiti del tuo hardware? E quali sono i pro e i contro di avere tracker meno evoluti?
+
+> XCOPY: Penso che mi spinga maggiormente a comporre con un senso di drammaturgia. Prima, mi limitavo a riversare elementi senza molta struttura, ma ora ogni singolo pattern ha un significato per me.
+Quei quattro canali sono in realtà un perfetto moltiplicatore di creatività, e questo è sufficiente. È davvero appagante quando tutto deve essere attentamente ponderato. In questo modo non ci si perde nella propria creazione.
+
+
+> STC: Qual è il tuo rapporto con la scena underground in Polonia?
+
+> XCOPY: Come ho già detto, ho gestito la mia etichetta discografica per circa 10 anni e sono stato coinvolto in diverse band e progetti. Ho suonato in molti concerti in città come Cracovia, Varsavia, Białystok, Toruń, Bydgoszcz, Stettino, Danzica e molte altre.
+
+Per un certo periodo sono stato attivo anche nella scena della musica improvvisata e, come sai, è un ambiente in cui si crea un vero legame con le persone suonando insieme. Questa rete di contatti è cresciuta naturalmente nel tempo.
+
+Ora sono immerso nella demoscene e la considero un altro capitolo dello stesso percorso. Queste nicchie sono incredibilmente stimolanti per me, mi hanno dato molto. Ho incontrato persone fantastiche e mi sono divertito un mondo.
+
+> STC: Parlaci un po' di più della "PTWeekender Crew"?
+
+> XCOPY: In breve, PT Weekender (precedentemente PT1210 Weekender) è un evento online senza scopo di lucro in cui un gruppo di DJ si esibisce utilizzando due Commodore Amiga, mixando musica tracker .mod, principalmente orientata alla dance, per appassionati di Amiga e amanti della musica.
+
+Tutto è iniziato con XSM, Amiga Junglism e Si Goes Retro, che costituivano il nucleo del gruppo. Poi le cose hanno iniziato a crescere. Si è tenuto il primo PT Weekender e io mi sono unito durante la seconda edizione, rimanendoci da allora. Ora ci stiamo avvicinando alla decima edizione.
+
+Tutto è iniziato durante la pandemia e in qualche modo è continuato. Si è trasformato in un progetto nato dalla passione e in una micro-comunità davvero vivace, con nuovi DJ che si sono uniti nel tempo e a volte anche vecchi DJ che sono tornati.
+
+Sul nostro server condividiamo sample, molte delle nostre produzioni, brani completi, retrack, versioni VIP e in generale una grande quantità di musica. È impossibile menzionare tutti i coinvolti, ma cercherò di evidenziare alcuni dei protagonisti principali, e mi scuso in anticipo se dovessi dimenticare qualcuno.
+
+Dal nucleo centrale dei DJ: !cyke, DJ NEST, DJ Nicci Dee, Amiga Junglism, breakbob, cTrix, Ghaleon, Tytus, [h0ffman](https://hoffman.bandcamp.com/), Quaad, Si Goes Retro, Snakebyte64, Stekker, Teo, RAV e, ultimo ma non meno importante, a mio parere assolutamente cruciale per la costruzione di questa community, l'inarrestabile e brillante Xtra Spice Mikey.
+
+> STC: Esiste un ambiente micromusicale/chiptune in Polonia?
+
+> XCOPY: Credo che a parte la demoscene, che è molto forte in Polonia, non ci sia molto altro da trovare. Se si guardano artisti come Pator e altri artisti chiptune, ci sono sicuramente degli ottimi individui, ma come scena più ampia, è piuttosto limitata.
+
+Esistono progetti come Mikro Orchestra (crew LSDJ) di amici di Breslavia, e alcuni più piccoli come Green Jesus, ma nel complesso non ci sono molti eventi nei club. Alcuni cercano di organizzarne a Varsavia, e anche Tytus ha fatto qualche tentativo a Breslavia.
+
+Tuttavia, in qualche modo, questa cultura sembra stia svanendo un po' in Polonia, non sta scomparendo del tutto, ma sta diventando sempre più difficile da trovare.
+
+
+> STC: È il tuo primo tour fuori dalla Polonia? Parlaci del tuo prossimo viaggio in Giappone.
+
+> XCOPY: No, assolutamente no, ho già fatto diversi tour in Europa. Ho suonato in paesi come Spagna, Francia, Lituania, Lettonia e Germania. Mi sono esibito anche molte volte in Ucraina, dato che è abbastanza vicina, con diversi progetti, incluso quello di XCOPY.
+
+Per quanto riguarda il Giappone, ci andrò per una residenza artistica con la mia ragazza. Lavoreremo a un progetto di registrazione sul campo chiamato "Conversations with Fuji". È una sorta di performance, e allo stesso tempo stiamo creando un corpus di documentazione più ampio, che include un libro e un film documentario.
+
+L'intero progetto esplora idee animistiche e filosofiche attraverso il suono e la performance.
+
+> STC: I tuoi brani e i tuoi liveset spaziano dalla House alla DNB, dall'Hardtechno alla Jungle; supponiamo che la versatilità sia una tua caratteristica personale, ma qual è il tuo genere preferito in tutti questi stili?
+
+> XCOPY: Ottima domanda, perché per me la risposta cambia molto. Dipende dal momento.
+
+In questo momento, sento il desiderio di esplorare la musica elettronica sperimentale, qualcosa di più ricercato e astratto. Mi manca un po' quell'estetica della demoscene, quel tipo di atmosfera che si respirava con etichette come Raster-Noton o Mille Plateaux.
+
+Sono anche molto ispirato da etichette come la ucraina Kvitnu, che consiglio vivamente. E artisti come Pan Sonic o Frank Bretschneider, quel tipo di sonorità è qualcosa che mi piacerebbe esplorare di più nei miei set in questo periodo.
+
+> STC: Ti identifichi di più con la definizione di DJ o di produttore? Il tuo approccio è simile alla trascrizione di un brano reale? Non abbiamo ancora capito bene il tuo modo di comporre. Quello che suoni è "materiale nuovo" prodotto da te o è una "cover"? Parlaci del tuo processo di esecuzione/composizione.
+
+> XCOPY: Credo che in questo momento mi identifichi di più come DJ, nei miei set suono principalmente brani già pronti. Ma sto anche lavorando al mio materiale, a breve uscirà un album con circa 25 tracce che sto sviluppando dal 2022. È un traguardo importante per me, e probabilmente inizierò a mixare più spesso quei brani nei miei set.
+Tutto ciò che faccio si basa sul campionamento. Sono affascinato dai nastri magnetici da anni e campiono molto materiale dalle videocassette VHS. È da lì che deriva il mio suono un po' grintoso e ricco di texture.
+
+Quindi quello che suono è un mix, in parte composto da mie produzioni, in parte da brani di altri, ma tutto passa attraverso il mio personale metodo di selezione e mixaggio dal vivo. Non si tratta tanto di fare cover, quanto piuttosto di rimodellare e ricontestualizzare i brani in tempo reale.
+
+/////////////////////////
+```
+## Dopo il nostro incontro
+
+Quindi, abbiamo scritto queste domande perché anche noi non sapevamo cosa ci aspettasse stando insieme per una settimana. Una scatola nera totale.
+
+![image](/media/content/stcx.png)
+*Da sinistra a destra: **KriSh**, **Artemisia666**, **Ick_** , **XCOPY**, **b00leant_** (dal nostro ultimo giorno a Roma al [Rhizome](https://www.rhizomerm.com/))*
+
+```intervista
+//////////////////////////
+
+> STC: Allora, come vi sentite dopo questi giorni trascorsi insieme?
+
+> XCOPYPRO: Mi sono sentito tra ottimi amici. Ho potuto assorbire tutto, la musica, le belle giornate calde e il viaggio. Ci sono state tante conversazioni, molta apertura, pensieri e idee condivise e molte somiglianze tra noi.
+
+
+> STC: Qual è stata la data migliore del tuo tour? Napoli/Itri/Roma?
+
+> XCOPYPRO: Tutti e tre gli show sono stati unici, ma credo che ricorderemo soprattutto Itri. Ho suonato lì per circa sei ore in totale. Ho iniziato con un riscaldamento jungle, poi ho suonato techno nel cuore della notte, dalle 2 alle 3:30 circa, e più tardi la mattina ho fatto un set b2b con Fabio sul suo soundsystem per un altro paio d'ore. Ho incontrato persone fantastiche, ho avuto delle belle conversazioni, ho condiviso storie intorno al fuoco e ho davvero sentito l'atmosfera del posto. Come l'ha definita Stefano, "agrotechno".
+
+> STC: Quali sono gli aneddoti più divertenti che ricordi di questo tour?
+
+> XCOPYPRO: Ho adorato il momento in cui tutta la crew di STC cantava a squarciagola "Tutto il resto è noia" di Franco Califano in macchina, mentre andavamo a Napoli. È stato indimenticabile. Quella canzone mi è rimasta impressa per diversi giorni, anche ora che sono tornato in Polonia, e continuo ad ascoltarla in cuffia. Mi fa rivivere emozioni forti e mi riporta indietro a quel momento. Bellissima esperienza.
+
+> STC: Triste a dirsi ma è ora di salutarci! Ma dovremmo dire "Questo non è un addio, è un arrivederci!"
+
+> XCOPYPRO: Sono sicuro di aver trovato nuovi amici in Italia, ed è questo che porto con me da questo viaggio. Grazie di tutto, vi voglio bene!
+Grazie davvero, è stata un'intervista super! Le domande sono state tra le migliori e più azzeccate che abbia mai ricevuto. Davvero, grazie di cuore!
 
 /////////////////////////
 ```

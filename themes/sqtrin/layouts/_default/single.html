@@ -18,8 +18,8 @@
   {{ if and .Params.langs (gt (len .Params.langs) 1) }}
   <script>
   (function(){
-    var langs = {{ .Params.langs | jsonify }};
-    var defaultLang = {{ with .Params.lang_default }}{{ . | jsonify }}{{ else }}null{{ end }};
+    var langs = [{{ range $i, $l := .Params.langs }}{{ if $i }},{{ end }}"{{ $l }}"{{ end }}];
+    var defaultLang = {{ with .Params.lang_default }}"{{ . }}"{{ else }}null{{ end }};
     var saved = localStorage.getItem('sq-lang');
     var active = defaultLang || (saved && langs.indexOf(saved) !== -1 ? saved : langs[0]);
     function activate(lang) {

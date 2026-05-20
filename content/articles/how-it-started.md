@@ -2,7 +2,10 @@
 title: "How it started"
 date: 2027-03-12
 description: "Short genesis of Square Terror"
+langs: ["en"]
 ---
+
+{{< lang "en" >}}
 
 ## it's April 2019
 
@@ -15,3 +18,5 @@ Thanks to the "Micromusic Italy" community, we discovered another chiptuner in R
 We decided to form this collective to play around, without imagining what it would be capable of.
 
 ## terrore quadrato
+
+{{< /lang >}}

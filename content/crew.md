@@ -1,9 +1,12 @@
 ---
 title: "crew"
 image: ""
+langs: ["en"]
 ---
 
-[**artemisia666**](#artemisia666), [**Ick_**](#ick_), [**b00leant**](#b00leant), [**slippedbit**](#slipped-bit), [**krish**](#krish),[**daimonchip**](#daimonchip) performs as different artists in different art forms.
+{{< lang "en" >}}
+
+[**artemisia666**](#artemisia666), [**Ick_**](#ick_), [**b00leant**](#b00leant), [**slippedbit**](#slipped-bit), [**krish**](#krish),[**daimonchip**](#daimonchip)
 
 ## art_emisia666
 
@@ -63,14 +66,12 @@ Loves music machines. Then bought a Game Boy in 2015. He's still playing fat bas
 
 ![image](/media/content/daimon.png "avatar")
 
-/ARCHIVE/UNSTABLE_NODE/DAIMON_CHIP.log STATUS: PARTIALLY CORRUPTED // SIGNAL STILL ACTIVE ORIGIN: ROME → BERLIN (UNVERIFIED TRANSMISSION).
+Daimon Chip is a chipmusic artist born in Rome and based in Berlin. He forges the sound of his music using a Nintendo Game Boy, transforming a portable console into a vehicle of sonic chaos designed to move bodies and invoke delirium on the dance floor.
+Informed by Hip Hop, Techno, Tekno, Hardcore, and Drum & Bass, he constructs fast-paced 8-bit scenarios where pressure, melody, and emotion intertwine in distortion, noise, and broken rhythms.
+Between 160 and 170 BPM, the music doesn't develop; it manifests and collides.
+Bass, glitches, and sudden fractures emerge like omens inside an overloaded machine at the heart of an endless rave.
+The name Daimon is rooted in ancient Greek mythology: a guiding spirit, a liminal force between human instinct and the divine unknown.
+His music embodies this presence—a restless entity made of circuit and impulse, half machine, half myth.
+Founder of the Square Terror Collective with Ick__ and b00leant, member of 8bit Italy, creator of the Micromusic Italy Sunday Jam, and co-organizer of the Stranger Bits events in Berlin with 0r4.
 
---------- ENTITY: "DAIMON CHIP" Not a simple artistic identity. Not a signature traceable to an individual. A sound system intercepted through a fragmented transmission. A Game Boy unit repurposed beyond the limits of its original architecture—transformed into a ritual device with limited capacity.
-
---------- MAIN OUTPUT: The system does not compose music. It generates altered states. Within the 160–170 BPM threshold: - rhythm becomes a pressure field - bass manifests as a seismic event - glitches act as structural fractures - sudden changes interrupt the signal's continuity. The sound does not seek aesthetics. It produces interference. The interference generates movement, evoking states of collective delirium on the dance floor.
-
---------- SIGNAL: DAIMON Recovered from an ancient conceptual level: “daimōn” — an intermediate force between human perception and unknown intelligence. Within this system the concept has been corrupted and recompiled: not spirit, not machine, but threshold condition. A presence that emerges only in moments of instability.
-
---------- NETWORK FRAGMENTS: Square Terror Collective (founded by Daimon Chip together with Ick__ and b00leant) 8bit Italy cluster Micromusic Italy Sunday Jam Stranger Bits / propagation field Berlin (connected to 0r4) STATUS: ACTIVE / UNCONTAINABLE / SELF-PROPAGATING.
-
---------- FINAL SYSTEM NOTE: This file behaves like a sacred scripture when read. That same scripture behaves like a system error when executed. DO NOT STABILIZE THE SIGNAL.
+{{< /lang >}}

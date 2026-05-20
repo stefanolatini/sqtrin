@@ -5,7 +5,10 @@ event_date: "2026-04-10"
 image: "/media/content/mdt2k26.png"
 location: "Italy"
 description: ""
+langs: ["en"]
 ---
+
+{{< lang "en" >}}
 
 ## Dates
 
@@ -33,3 +36,5 @@ We were organizing the Terrore Quadrato 6.0 in ZK and after a while that place w
 ## The Making 
 We decided to resist and go for a mini-tour even without the possibility to let XCOPY play in Rome, because of the delicate politics situation.
 -->
+
+{{< /lang >}}

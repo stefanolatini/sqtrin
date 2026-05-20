@@ -2,7 +2,10 @@
 title: "while(you.move){do}"
 date: 2026-09-12
 description: "looping composite signals"
+langs: ["it"]
 ---
+
+{{< lang "it" >}}
 
 # PROGETTO SENZA NOME
 
@@ -17,3 +20,5 @@ Installazione video interattiva che funziona solo con il movimento di uno o più
 ## Ascoltare
 
 Audio feedback in loop? Così è coerente con il vedere
+
+{{< /lang >}}

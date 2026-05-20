@@ -2,7 +2,10 @@
 title: "Soundscaping"
 date: 2026-09-12
 description: "Approccio sinestetico a bassissima risoluzione"
+langs: ["it"]
 ---
+
+{{< lang "it" >}}
 
 # Soundscaping
 
@@ -17,4 +20,6 @@ Approccio sinestetico a bassissima risoluzione che unisce la fotografia urbanist
 Ogni gigantografia avrà accanto un vero GameBoy con delle cuffie. Verranno riprodotti le versioni in 8bit dei rumori ambientali del luogo fotografato, composte per l’occasione.
 
 Proposte di luoghi: Tangenzale Est, Parco degli Acquedotti, stazione Tuscolana (?) etc
+
+{{< /lang >}}
 

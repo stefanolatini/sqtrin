@@ -9,8 +9,39 @@
   <img src="{{ . | relURL }}" alt="{{ $.Params.image_alt }}" loading="lazy" class="home-cover">
   {{ end }}
 
+  {{ if and .Params.langs (gt (len .Params.langs) 1) }}
+  <div class="lang-toggle" aria-label="language selector">
+    {{ range .Params.langs }}<button class="lang-btn" data-lang="{{ . }}">{{ . }}</button>{{ end }}
+  </div>
+  {{ end }}
+
   {{ with .Content }}<div class="content">{{ . }}</div>{{ end }}
 
+  {{ if and .Params.langs (gt (len .Params.langs) 1) }}
+  <script>
+  (function(){
+    var langs = [{{ range $i, $l := .Params.langs }}{{ if $i }},{{ end }}"{{ $l }}"{{ end }}];
+    var defaultLang = {{ with .Params.lang_default }}"{{ . }}"{{ else }}null{{ end }};
+    var saved = localStorage.getItem('sq-lang');
+    var active = defaultLang || (saved && langs.indexOf(saved) !== -1 ? saved : langs[0]);
+    function activate(lang) {
+      document.querySelectorAll('.lang-block').forEach(function(el){
+        el.hidden = el.dataset.lang !== lang;
+      });
+      document.querySelectorAll('.lang-btn').forEach(function(btn){
+        btn.classList.toggle('active', btn.dataset.lang === lang);
+      });
+      localStorage.setItem('sq-lang', lang);
+    }
+    document.querySelectorAll('.lang-btn').forEach(function(btn){
+      btn.addEventListener('click', function(){ activate(this.dataset.lang); });
+    });
+    activate(active);
+  })();
+  </script>
+  {{ end }}
+
+  <!-- 
   {{/* ── Log ─────────────────────────────────────────── */}}
   {{ $logPages := where site.RegularPages "Section" "log" }}
   {{ if $logPages }}
@@ -41,7 +72,7 @@
           {{ end }}
           <div class="content">{{ .Content }}</div>
         </article>
-        {{ end }}
+        {{ end }} 
       </section>
       {{ end }}
     {{ end }}
@@ -66,6 +97,7 @@
 
   </section>
   {{ end }}
+  -->
 
 </section>
 {{ end }}
