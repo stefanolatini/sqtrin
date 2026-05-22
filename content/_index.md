@@ -12,7 +12,7 @@ langs: ["en","it"]
 Square Terror is a collective based in Rome and focused in exploring non-conventional chiptune, glitch art and digital vandalism.
 Welcome to our space into _**the**_ network
 
-## Hating the chiptune
+## Hating chiptune
 
 Classic Chiptune is an umbrella term that covers a range of styles and mindset that we don't want to embrace for these reasons:
 
@@ -21,15 +21,15 @@ Classic Chiptune is an umbrella term that covers a range of styles and mindset t
 
 For this reason, the choice is made to synthesize everything that transcends mere "blip-blop"—to embrace the glitch in all its forms—thereby ensuring that vintage hardware no longer sounds anachronistic, but possesses a brand-new sound.
 
-## Vandalize the Data
+## Vandalize data
 
 The rhetoric of error—viewing it as something to be corrected or remedied—is itself a product of capitalist thought.
 Efficiency and perfection are not always the right interpretive lenses, especially in digital art; let us re-establish contact with raw data, starting from the error—the misplaced bit.
 
-## Technology as a Tool for Struggle
+## Technology as a tool for struggle
 
 In circles of political struggle, the machine is often perceived as a speculative instrument—one useful only to the master, who reaps economic and labor-related benefits from it.
-Just as the *Manifesto* itself declares—"The machine must be the worker's ally"—we maintain that it must aid us in every act of struggle: from the dissemination of information to the creative act (or any act of destruction) involved in bringing computer science out of the corporate sphere and out of the academic world.
+Just as the *Manifesto* itself declares _"The machine must be the worker's ally"_ we maintain that it must aid us in every act of struggle: from the dissemination of information to the creative act (or any act of destruction) involved in bringing computer science out of the corporate sphere and out of the academic world.
 
 {{< /lang >}}
 
@@ -58,7 +58,7 @@ L'efficienza e la perfezione non sono sempre le giuste chiavi di lettura, specia
 
 Spesso negli ambienti di lotta politica la macchina viene vista come uno
 strumento speculativo e utile solo per il padrone che ne trae vantaggi economici e lavorativi.
-Così come lo stesso Manifesto recita "La macchina dev'essere alleata del lavoratore" noi sosteniamo che essa
+Così come lo stesso *Manifesto* recita _"La macchina dev'essere alleata del lavoratore"_ noi sosteniamo che essa
 debba aiutarci in ogni atto di lotta, a partire dall'informazione, dall'atto creativo (o qualsivoglia distruttivo)
 di portare la computer science in un ambito che esca dal lavoro consulenziale o dalla ricerca scientifica.
 
