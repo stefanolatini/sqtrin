@@ -62,7 +62,7 @@ The software I use, PT1210, is actually quite new, it dates from around 2014. So
 
 > STC: Where your inspiration come from? Is there a particular artist that influenced your style?
 
-> XCOPY: I truly love demoscene productions, and a huge part of my inspiration comes from people around me. Artists like XSM, Amiga Junglism, Si Goes Retro, Teo, cTrix, Juice, Randall, Celsius, h0ffman, Dascon, TZX, Magiel, Lynn Drumm, Subi, DJ Nest, Mygg, Zenial, Skope, Qwan, Stekker, Jazzcat, Jammer, KK and also friends like Tomarkus, Kalosz, Pator, Aceman, Dalthon, E!ghtBM, Dokthor, Dan, and 2G1B, and many others.
+> XCOPY: I truly love demoscene productions, and a huge part of my inspiration comes from people around me. Artists like XSM, [Amiga Junglism](https://amigajunglism.bandcamp.com/track/now-my-selecta), Si Goes Retro, Teo, cTrix, Juice, Randall, Celsius, h0ffman, Dascon, TZX, Magiel, Lynn Drumm, Subi, DJ Nest, Mygg, Zenial, Skope, Qwan, Stekker, Jazzcat, Jammer, KK and also friends like Tomarkus, Kalosz, Pator, Aceman, Dalthon, E!ghtBM, Dokthor, Dan, and 2G1B, and many others.
 I really recommend checking out their work, not only modules but also productions on other platforms. It’s not just about MOD files, there’s also amazing stuff made with Adlib Tracker or on ZX Spectrum. For example, Pator’s ZX Spectrum tracks are pure gold, no doubt about it.
 
 That whole ecosystem is a constant source of inspiration for me.
@@ -85,7 +85,7 @@ Right now, I’m deeply into the demoscene, and it feels like another chapter of
 
 > STC: Tell us a bit more about "PTWeekender Crew"?
 
-> XCOPY: In short, PT Weekender (previously PT1210 Weekender) is a non-profit online event where a group of DJs perform using two Commodore Amigas, mixing .mod tracker music, mostly dance-oriented, for both Amiga fans and music lovers.
+> XCOPY: In short, [PT Weekender](https://www.ptweekender.com/) (previously PT1210 Weekender) is a non-profit online event where a group of DJs perform using two Commodore Amigas, mixing .mod tracker music, mostly dance-oriented, for both Amiga fans and music lovers.
 It all started with XSM, Amiga Junglism, and Si Goes Retro, they were really the core of the crew. Then things began to grow. The first PT Weekender happened, and I joined during the second edition and stayed ever since. Now we’re heading toward the tenth edition.
 
 It all began during the pandemic, and somehow it just kept going. It turned into a strong passion project and a really vibrant micro-community, with new DJs joining over time and sometimes old ones coming back as well.
@@ -217,7 +217,7 @@ Il software che uso, PT1210, è in realtà piuttosto recente, risale al 2014 cir
 
 > STC: Da dove trai ispirazione? C'è un artista in particolare che ha influenzato il tuo stile?
 
-> XCOPY: Amo davvero le produzioni della demoscene e gran parte della mia ispirazione proviene dalle persone che mi circondano. Artisti come XSM, Amiga Junglism, Si Goes Retro, Teo, cTrix, Juice, Randall, Celsius, h0ffman, Dascon, TZX, Magiel, Lynn Drumm, Subi, DJ Nest, Mygg, Zenial, Skope, Qwan, Stekker, Jazzcat, Jammer, KK e anche amici come Tomarkus, Kalosz, Pator, Aceman, Dalthon, E!ghtBM, Dokthor, Dan e 2G1B, e molti altri.
+> XCOPY: Amo davvero le produzioni della demoscene e gran parte della mia ispirazione proviene dalle persone che mi circondano. Artisti come XSM, [Amiga Junglism](https://amigajunglism.bandcamp.com/track/now-my-selecta), Si Goes Retro, Teo, cTrix, Juice, Randall, Celsius, h0ffman, Dascon, TZX, Magiel, Lynn Drumm, Subi, DJ Nest, Mygg, Zenial, Skope, Qwan, Stekker, Jazzcat, Jammer, KK e anche amici come Tomarkus, Kalosz, Pator, Aceman, Dalthon, E!ghtBM, Dokthor, Dan e 2G1B, e molti altri.
 
 Consiglio vivamente di dare un'occhiata ai loro lavori, non solo ai moduli ma anche alle produzioni su altre piattaforme. Non si tratta solo di file MOD, ci sono anche cose incredibili realizzate con Adlib Tracker o su ZX Spectrum. Ad esempio, le tracce di Pator per ZX Spectrum sono oro puro, senza dubbio.
 
@@ -240,7 +240,7 @@ Ora sono immerso nella demoscene e la considero un altro capitolo dello stesso p
 
 > STC: Parlaci un po' di più della "PTWeekender Crew"?
 
-> XCOPY: In breve, PT Weekender (precedentemente PT1210 Weekender) è un evento online senza scopo di lucro in cui un gruppo di DJ si esibisce utilizzando due Commodore Amiga, mixando musica tracker .mod, principalmente orientata alla dance, per appassionati di Amiga e amanti della musica.
+> XCOPY: In breve, [PT Weekender](https://www.ptweekender.com/) (precedentemente PT1210 Weekender) è un evento online senza scopo di lucro in cui un gruppo di DJ si esibisce utilizzando due Commodore Amiga, mixando musica tracker .mod, principalmente orientata alla dance, per appassionati di Amiga e amanti della musica.
 
 Tutto è iniziato con XSM, Amiga Junglism e Si Goes Retro, che costituivano il nucleo del gruppo. Poi le cose hanno iniziato a crescere. Si è tenuto il primo PT Weekender e io mi sono unito durante la seconda edizione, rimanendoci da allora. Ora ci stiamo avvicinando alla decima edizione.
 
