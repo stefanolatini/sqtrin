@@ -2,8 +2,10 @@
 title: "Line out: XCOPY"
 date: 2026-03-24
 image: "/media/content/xcopy.jpeg"
-description: "Interview before/after the tour"
-langs: ["en","it"]
+descriptions:
+  it: "Intervista prima/dopo il tour"
+  en: "Interview before/after the tour"
+langs: ["it","en"]
 ---
 
 

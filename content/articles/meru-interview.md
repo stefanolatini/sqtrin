@@ -1,8 +1,10 @@
 ---
 title: "Line out: Meru"
 date: 2027-03-24
-description: "Interview with Meru(merutochan)"
-langs: ["en"]
+descriptions:
+  it: "Un adattatore clock star a doppio fork per DMG/GBC"
+  en: "A double-fork, clock star adapter for DMG/GBC"
+langs: ["it","en"]
 ---
 
 {{< lang "en" >}}

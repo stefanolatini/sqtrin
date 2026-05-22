@@ -14,7 +14,7 @@
         {{ end }}
         <h3>{{ .Title }}</h3>
       </a>
-      {{ with .Description }}<p class="card-desc">{{ . }}</p>{{ end }}
+      {{ if .Params.descriptions }}<p class="card-desc has-multilang">{{ range $lang, $desc := .Params.descriptions }}<span class="lang-block" data-lang="{{ $lang }}">{{ $desc }}</span>{{ end }}</p>{{ else }}{{ with .Description }}<p class="card-desc">{{ . }}</p>{{ end }}{{ end }}
       {{ with .Date }}<p class="card-date">{{ dateFormat "2006.01.02" . }}</p>{{ end }}
     </li>
     {{ end }}
