@@ -291,7 +291,7 @@ Quindi, abbiamo scritto queste domande perché anche noi non sapevamo cosa ci as
 ![image](/media/content/stcx.png)
 *Da sinistra a destra: **KriSh**, **Artemisia666**, **Ick_** , **XCOPY**, **b00leant_** (dal nostro ultimo giorno a Roma al [Rhizome](https://www.rhizomerm.com/))*
 
-```intervista
+```interview
 //////////////////////////
 
 > STC: Allora, come vi sentite dopo questi giorni trascorsi insieme?
@@ -313,5 +313,6 @@ Quindi, abbiamo scritto queste domande perché anche noi non sapevamo cosa ci as
 Grazie davvero, è stata un'intervista super! Le domande sono state tra le migliori e più azzeccate che abbia mai ricevuto. Davvero, grazie di cuore!
 
 /////////////////////////
+
 ```
 {{< /lang >}}
