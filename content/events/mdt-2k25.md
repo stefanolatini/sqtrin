@@ -3,7 +3,7 @@ title: "MicroDamageTour 2k25"
 date: 2025-01-25
 event_date: "2025-01-25"
 image: "/media/content/mdt2k25.png"
-location: ""
+location: "Italia"
 description: ""
 langs: ["it"]
 ---

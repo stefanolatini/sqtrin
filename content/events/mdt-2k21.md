@@ -3,7 +3,7 @@ title: "MicroDamageTour 2k21"
 date: 2022-03-12
 event_date: "2021-09-30"
 image: "/media/content/mdt2k21.png"
-location: ""
+location: "Italia"
 description: ""
 langs: ["it"]
 ---

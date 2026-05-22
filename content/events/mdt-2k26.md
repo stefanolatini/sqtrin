@@ -3,7 +3,7 @@ title: "Micro Damage Tour 2k26"
 date: 2026-03-24
 event_date: "2026-04-10"
 image: "/media/content/mdt2k26.png"
-location: "Italy"
+location: "Italia"
 description: ""
 langs: ["en"]
 ---
