@@ -337,6 +337,24 @@ ul.nobull li {list-style-type: none}
 }
 
 
+/* ── Language block visibility (CSS-driven, no FOUC) ──────── */
+
+html[data-lang] .has-multilang .lang-block { display: none; }
+html[data-lang="en"] .has-multilang .lang-block[data-lang="en"],
+html[data-lang="it"] .has-multilang .lang-block[data-lang="it"] { display: block; }
+
+.nav-lang-toggle {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  .nav-lang-toggle {
+    margin-top: 1em;
+  }
+}
+
 /* ── Language toggle ────────────────────────────────────────── */
 
 .lang-toggle {

@@ -1,8 +1,7 @@
 {{ define "main" }}
 <section class="list">
+  <h1 data-i18n="projects">{{ .Title }}</h1>
   {{ with .Content }}<div class="content">{{ . }}</div>{{ end }}
-
-  {{/* --- template con immagine anteprima (stile articles) --- */}}
   <ul class="grid-articles">
     {{ range .Pages }}
     <li class="card-article">

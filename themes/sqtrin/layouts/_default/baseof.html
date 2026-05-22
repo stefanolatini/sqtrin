@@ -15,6 +15,8 @@
   <link rel="apple-touch-icon" sizes="180x180" href="{{ "/media/interface/apple-touch-icon.png" | relURL }}">
   <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
   {{ with site.Params.favicon }}<link rel="shortcut icon" type="image/png" href="{{ . | relURL }}">{{ end }}
+  <script>!function(){var l=localStorage.getItem('sq-lang');document.documentElement.dataset.lang=(l==='it'?'it':'en');}();</script>
+  <style>html[data-lang] .has-multilang .lang-block{display:none}html[data-lang="en"] .has-multilang .lang-block[data-lang="en"],html[data-lang="it"] .has-multilang .lang-block[data-lang="it"]{display:block}</style>
 </head>
 <body class="page_{{ .Type }}{{ if .IsHome }} page_home{{ end }}">
 
@@ -128,7 +130,12 @@
         <span class="logo-text">{{ site.Title }}</span>
         {{ end }}
       </a>
-      {{ range site.Menus.main }}{{ if ne .Name "home" }}<span class="nav-sep" aria-hidden="true">•</span> <a href="{{ .URL }}"{{ if eq $.RelPermalink .URL }} class="active"{{ end }}>{{ .Name }}</a>{{ end }}{{ end }}
+      {{ range site.Menus.main }}{{ if ne .Name "home" }}<span class="nav-sep" aria-hidden="true">•</span> <a href="{{ .URL }}" data-nav-key="{{ .Name }}"{{ if eq $.RelPermalink .URL }} class="active"{{ end }}>{{ .Name }}</a>{{ end }}{{ end }}
+      <span class="nav-sep" aria-hidden="true">•</span>
+      <div class="nav-lang-toggle" aria-label="language selector">
+        <button class="lang-btn" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="it">IT</button>
+      </div>
     </nav>
   </header>
 
@@ -159,5 +166,38 @@
     </div>
   </footer>
 
+  <script>
+  (function(){
+    var i18n = {
+      events:   { en: 'Events',       it: 'Eventi' },
+      crew:     { en: 'Crew',         it: 'Crew' },
+      music:    { en: 'Music',        it: 'Musica' },
+      projects: { en: 'Projects',     it: 'Progetti' },
+      articles: { en: 'Articles',     it: 'Articoli' },
+      log:      { en: 'Log',          it: 'Log' },
+      upcoming: { en: 'Upcoming',     it: 'In programma' },
+      past:     { en: 'Past',         it: 'Passati' }
+    };
+    function activate(lang) {
+      document.documentElement.dataset.lang = lang;
+      document.querySelectorAll('[data-nav-key]').forEach(function(a){
+        var key = a.dataset.navKey;
+        if (i18n[key] && i18n[key][lang]) a.textContent = i18n[key][lang];
+      });
+      document.querySelectorAll('[data-i18n]').forEach(function(el){
+        var key = el.dataset.i18n;
+        if (i18n[key] && i18n[key][lang]) el.textContent = i18n[key][lang];
+      });
+      document.querySelectorAll('.lang-btn').forEach(function(btn){
+        btn.classList.toggle('active', btn.dataset.lang === lang);
+      });
+      localStorage.setItem('sq-lang', lang);
+    }
+    document.querySelectorAll('.lang-btn').forEach(function(btn){
+      btn.addEventListener('click', function(){ activate(this.dataset.lang); });
+    });
+    activate(localStorage.getItem('sq-lang') === 'it' ? 'it' : 'en');
+  })();
+  </script>
 </body>
 </html>

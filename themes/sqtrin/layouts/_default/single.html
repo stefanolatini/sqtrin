@@ -1,5 +1,5 @@
 {{ define "main" }}
-<article class="page">
+<article class="page{{ if and .Params.langs (gt (len .Params.langs) 1) }} has-multilang{{ end }}">
   <h1>{{ .Title }}</h1>
   {{ with .Description }}<h3 class="page-description">{{ . }}</h3>{{ end }}
   {{ with .Params.image }}
@@ -7,39 +7,9 @@
       {{ else }}
       <!--<span class="logo-text">{{ site.Title }}</span>-->
       {{ end }}
-  {{ if and .Params.langs (gt (len .Params.langs) 1) }}
-  <div class="lang-toggle" aria-label="language selector">
-    {{ range .Params.langs }}<button class="lang-btn" data-lang="{{ . }}">{{ . }}</button>{{ end }}
-  </div>
-  {{ end }}
   <div class="content">
     {{ .Content }}
   </div>
-  {{ if and .Params.langs (gt (len .Params.langs) 1) }}
-  <script>
-  (function(){
-    var langs = [{{ range $i, $l := .Params.langs }}{{ if $i }},{{ end }}"{{ $l }}"{{ end }}];
-    var defaultLang = {{ with .Params.lang_default }}"{{ . }}"{{ else }}null{{ end }};
-    var saved = localStorage.getItem('sq-lang');
-    var active = defaultLang || (saved && langs.indexOf(saved) !== -1 ? saved : langs[0]);
-    function activate(lang) {
-      document.querySelectorAll('.lang-block').forEach(function(el){
-        el.hidden = el.dataset.lang !== lang;
-      });
-      document.querySelectorAll('.lang-btn').forEach(function(btn){
-        btn.classList.toggle('active', btn.dataset.lang === lang);
-      });
-      localStorage.setItem('sq-lang', lang);
-    }
-    document.querySelectorAll('.lang-btn').forEach(function(btn){
-      btn.addEventListener('click', function(){ activate(this.dataset.lang); });
-    });
-    activate(active);
-  })();
-  </script>
-  {{ else if .Params.langs }}
-  {{/* unica lingua: nessun toggle, nessun JS, il blocco è visibile di default */}}
-  {{ end }}
 </article>
   {{ with .Params.author }}<span class="page-author">/// {{ . }}, </span>{{ end }}
   {{ with .Params.date }}<span class="date">{{ dateFormat "02.01.2006" (time .) }}</span>{{ end }}

@@ -1,5 +1,6 @@
 {{ define "main" }}
 <section class="list">
+  <h1 data-i18n="articles">{{ .Title }}</h1>
   {{ with .Content }}<div class="content">{{ . }}</div>{{ end }}
 
   <ul class="grid-articles">

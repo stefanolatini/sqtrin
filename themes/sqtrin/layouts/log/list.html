@@ -1,6 +1,6 @@
 {{ define "main" }}
 <section class="log">
-  <h1>{{ .Title }}</h1>
+  <h1 data-i18n="log">{{ .Title }}</h1>
   {{ with .Content }}<div class="content">{{ . }}</div>{{ end }}
 
   {{ $groups := .Pages.GroupByDate "2006" }}

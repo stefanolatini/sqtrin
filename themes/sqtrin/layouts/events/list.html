@@ -19,10 +19,11 @@
 {{ $past    = sort $past    "Params.event_date" "desc" }}
 
 <section class="list">
+  <h1 data-i18n="events">{{ .Title }}</h1>
   {{ with .Content }}<div class="content">{{ . }}</div>{{ end }}
 
   {{ if $upcoming }}
-  <h2>Upcoming</h2>
+  <h2 data-i18n="upcoming">Upcoming</h2>
   <ul class="grid-events">
     {{ range $upcoming }}
     <li class="card-event">
@@ -47,7 +48,7 @@
   {{ end }}
 
   {{ if $past }}
-  <h2>Past</h2>
+  <h2 data-i18n="past">Past</h2>
   <ul class="grid-events">
     {{ range $past }}
     <li class="card-event">
