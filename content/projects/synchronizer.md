@@ -4,8 +4,8 @@ date: 2026-04-23
 author: "b00leant"
 image: "/media/content/synchronizer.png"
 descriptions:
-  it: "Un adattatore clock star a doppio fork per DMG/GBC"
-  en: "A double-fork, clock star adapter for DMG/GBC"
+  it: "Un clock-spliter per GameBoy"
+  en: "A clock-splitter for GameBoy"
 langs: ["it","en"]
 ---
 
