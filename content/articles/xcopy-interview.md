@@ -13,7 +13,7 @@ langs: ["it","en"]
 {{< lang "en" >}}
 
 Finally we got it! After several tries we finally booked a mini-tour with this crazy, CRAZY artist from Poznań, Poland.
-[XCopyPro](https://xcopypro.bandcamp.com/) it's a producer, an Amiga DJ that in the last 6 years tried to bring the ProTracker experience to a totally different level.
+[XCopyPro](https://xcopypro.bandcamp.com/) it's a producer, an Amiga DJ that in the last 6 years tried to bring the [ProTracker](https://16-bits.org/pt2.php) experience to a totally different level.
 
 ## Before we met
 
@@ -166,7 +166,7 @@ Grazie davvero, è stata un’intervista super! Le domande sono state tra le mig
 
 Finalmente ce l'abbiamo fatta! Dopo diversi tentativi, siamo finalmente riusciti a prenotare un mini-tour con questo artista pazzo, PAZZISSIMO, da Poznań, Polonia.
 
-[XCopyPro](https://xcopypro.bandcamp.com/) è un produttore, un Amiga di Amiga Commodore che negli ultimi 6 anni ha cercato di portare l'esperienza ProTracker a un livello completamente diverso.
+[XCopyPro](https://xcopypro.bandcamp.com/) è un produttore, un Dj di Amiga Commodore che negli ultimi 6 anni ha cercato di portare l'esperienza [ProTracker](https://16-bits.org/pt2.php) a un livello completamente diverso.
 
 ## Prima del nostro incontro
 
