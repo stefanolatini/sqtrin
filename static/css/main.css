@@ -349,6 +349,40 @@ html[data-lang="it"] .has-multilang .lang-block[data-lang="it"] { display: block
   align-items: center;
 }
 
+/* ── Home feed cronologico ───────────────────────────────── */
+
+.home-feed-title {
+  margin-bottom: 24px;
+}
+
+.card-type {
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.5;
+  margin: 4px 0 0 0;
+}
+
+.feed-archives {
+  margin-top: 40px;
+}
+
+.feed-year {
+  margin-bottom: 16px;
+}
+
+.feed-year > summary {
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 16px;
+}
+
+.feed-year .grid-articles {
+  margin-top: 16px;
+}
+
 @media (max-width: 600px) {
   .nav-lang-toggle {
     margin-top: 1em;

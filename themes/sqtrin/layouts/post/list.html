@@ -1,0 +1,30 @@
+{{ define "main" }}
+<section class="list">
+  <h1 data-i18n="Post">{{ .Title }}</h1>
+  {{ with .Content }}<div class="content">{{ . }}</div>{{ end }}
+
+  {{ $groups := .Pages.GroupByDate "2006" }}
+  {{ range $groups }}
+  <section class="log-year" id="{{ .Key }}">
+    <h2><a href="#{{ .Key }}">{{ .Key }}</a></h2>
+    <ul class="grid-articles">
+      {{ range .Pages.ByDate.Reverse }}
+      <li class="card-article">
+        <a href="{{ .RelPermalink }}">
+          {{ with .Params.image }}
+          <div class="article-featured" style="background-image: url('{{ . }}');"></div>
+          {{ else }}
+          <div class="article-featured article-featured--empty"></div>
+          {{ end }}
+          <h3>{{ .Title }}</h3>
+        </a>
+        {{ with .Description }}<p class="card-desc">{{ . }}</p>{{ end }}
+        {{ with .Date }}<p class="card-date">{{ dateFormat "2006.01.02" . }}</p>{{ end }}
+      </li>
+      {{ end }}
+    </ul>
+  </section>
+  {{ end }}
+
+</section>
+{{ end }}

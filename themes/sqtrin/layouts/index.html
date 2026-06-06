@@ -11,9 +11,109 @@
 
   {{ with .Content }}<div class="content">{{ . }}</div>{{ end }}
 
+  {{/* ── Feed cronologico ────────────────────────────────── */}}
+  {{ $feed := slice }}
+  {{ range where site.RegularPages "Section" "articles" }}
+    {{ $feed = $feed | append . }}
+  {{ end }}
+  {{ range where site.RegularPages "Section" "projects" }}
+    {{ $feed = $feed | append . }}
+  {{ end }}
+  {{ range where site.RegularPages "Section" "music" }}
+    {{ $feed = $feed | append . }}
+  {{ end }}
+  {{ range where site.RegularPages "Section" "post" }}
+    {{ $feed = $feed | append . }}
+  {{ end }}
+  {{ $feed = sort $feed "Date" "desc" }}
+
+  {{ $sectionLabels := dict
+    "articles" (dict "en" "articles" "it" "articoli")
+    "projects"  (dict "en" "projects"  "it" "progetti")
+    "music"     (dict "en" "music"     "it" "musica")
+    "log"       (dict "en" "post"      "it" "post")
+    "post"      (dict "en" "post"      "it" "post")
+  }}
+
+  {{ if $feed }}
+  {{ $currentYear := now.Format "2006" }}
+  {{ $byYear := dict }}
+  {{ range $feed }}
+    {{ $y := .Date.Format "2006" }}
+    {{ $items := index $byYear $y | default slice }}
+    {{ $byYear = merge $byYear (dict $y ($items | append .)) }}
+  {{ end }}
+
+  {{/* anni distinti in ordine decrescente */}}
+  {{ $years := slice }}
+  {{ range $feed }}
+    {{ $y := .Date.Format "2006" }}
+    {{ if not (in $years $y) }}{{ $years = $years | append $y }}{{ end }}
+  {{ end }}
+
+  <section class="home-feed">
+    <h2 class="home-feed-title">Log</h2>
+
+    {{/* anno corrente: card */}}
+    {{ $currentItems := index $byYear $currentYear }}
+    {{ if $currentItems }}
+    <ul class="grid-articles">
+      {{ range $currentItems }}
+      <li class="card-article">
+        <a href="{{ .RelPermalink }}">
+          {{ with .Params.image }}
+          <div class="article-featured" style="background-image: url('{{ . }}');"></div>
+          {{ else }}
+          <div class="article-featured article-featured--empty"></div>
+          {{ end }}
+          <h3>{{ .Title }}</h3>
+        </a>
+        <p class="card-type has-multilang">{{ range $lang, $label := index $sectionLabels .Section }}<span class="lang-block" data-lang="{{ $lang }}">{{ $label }}</span>{{ end }}</p>
+        {{ if .Params.descriptions }}<p class="card-desc has-multilang">{{ range $lang, $desc := .Params.descriptions }}<span class="lang-block" data-lang="{{ $lang }}">{{ $desc }}</span>{{ end }}</p>{{ else }}{{ with .Description }}<p class="card-desc">{{ . }}</p>{{ end }}{{ end }}
+        {{ with .Date }}<p class="card-date">{{ dateFormat "2006.01.02" . }}</p>{{ end }}
+      </li>
+      {{ end }}
+    </ul>
+    {{ end }}
+
+    {{/* anni precedenti: link */}}
+    {{ $pastYears := slice }}
+    {{ range $years }}
+      {{ if ne . $currentYear }}{{ $pastYears = $pastYears | append . }}{{ end }}
+    {{ end }}
+    {{ if $pastYears }}
+    <div class="feed-archives">
+      {{ range $pastYears }}
+      <details class="feed-year">
+        <summary>{{ . }}</summary>
+        <ul class="grid-articles">
+          {{ range index $byYear . }}
+          <li class="card-article">
+            <a href="{{ .RelPermalink }}">
+              {{ with .Params.image }}
+              <div class="article-featured" style="background-image: url('{{ . }}');"></div>
+              {{ else }}
+              <div class="article-featured article-featured--empty"></div>
+              {{ end }}
+              <h3>{{ .Title }}</h3>
+            </a>
+            <p class="card-type has-multilang">{{ range $lang, $label := index $sectionLabels .Section }}<span class="lang-block" data-lang="{{ $lang }}">{{ $label }}</span>{{ end }}</p>
+            {{ if .Params.descriptions }}<p class="card-desc has-multilang">{{ range $lang, $desc := .Params.descriptions }}<span class="lang-block" data-lang="{{ $lang }}">{{ $desc }}</span>{{ end }}</p>{{ else }}{{ with .Description }}<p class="card-desc">{{ . }}</p>{{ end }}{{ end }}
+            {{ with .Date }}<p class="card-date">{{ dateFormat "2006.01.02" . }}</p>{{ end }}
+          </li>
+          {{ end }}
+        </ul>
+      </details>
+      {{ end }}
+    </div>
+    {{ end }}
+
+  </section>
+  {{ end }}
+
   <!-- 
   {{/* ── Log ─────────────────────────────────────────── */}}
-  {{ $logPages := where site.RegularPages "Section" "log" }}
+  {{ $logPages := where site.RegularPages "Section" "post" }}
   {{ if $logPages }}
   <section class="log">
     <h2 id="log"><a href="/log">Log</a></h2>

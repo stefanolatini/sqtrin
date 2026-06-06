@@ -132,11 +132,25 @@
         {{ end }}
       </a>
       {{ range site.Menus.main }}{{ if ne .Name "home" }}<span class="nav-sep" aria-hidden="true">•</span> <a href="{{ .URL }}" data-nav-key="{{ .Name }}"{{ if eq $.RelPermalink .URL }} class="active"{{ end }}>{{ .Name }}</a>{{ end }}{{ end }}
-      <span class="nav-sep" aria-hidden="true">•</span>
+      <span class="nav-sep nav-lang-sep" aria-hidden="true">•</span>
       <div class="nav-lang-toggle" aria-label="language selector">
         <button class="lang-btn" data-lang="en">EN</button>
         <button class="lang-btn" data-lang="it">IT</button>
       </div>
+      <style>
+        @media (max-width: 768px) {
+          .main-nav .nav-lang-sep {
+            display: none;
+          }
+
+          .main-nav .nav-lang-toggle {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            margin-top: 0.5rem;
+          }
+        }
+      </style>
     </nav>
   </header>
 

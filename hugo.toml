@@ -3,6 +3,7 @@ languageCode = "en-EN"
 title = "Square Terror Collective"
 theme = "sqtrin"
 
+
 [params]
   description = "Square Terror Collective"
   thumbnail2 = "/media/services/rss.jpg"
@@ -41,3 +42,11 @@ theme = "sqtrin"
     name = "articles"
     url = "/articles/"
     weight = 6
+    [[menus.main]]
+    name = "manifesto"
+    url = "/manifesto/"
+    weight = 7
+  [[menus.main]]
+    name = "post"
+    url = "/post/"
+    weight = 8

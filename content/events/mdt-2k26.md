@@ -4,7 +4,7 @@ date: 2026-03-24
 event_date: "2026-04-10"
 image: "/media/content/mdt2k26.png"
 location: "Italia"
-description: ""
+description: "Mini tour insieme a XCOPY PRO"
 langs: ["en"]
 ---
 
