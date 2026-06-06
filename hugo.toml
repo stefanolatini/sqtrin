@@ -5,6 +5,7 @@ theme = "sqtrin"
 
 
 [params]
+    version = "1.0.1"
   description = "Square Terror Collective"
   thumbnail2 = "/media/services/rss.jpg"
   rss = "/index.xml"

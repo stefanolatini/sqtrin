@@ -369,21 +369,45 @@ html[data-lang="it"] .has-multilang .lang-block[data-lang="it"] { display: block
 
 @media (max-width: 768px) {
   .header-lang-toggle { display: none; }
+
   footer {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 16px;
-    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
     padding: 20px;
   }
-  footer a.logo { float: none; display: flex; align-items: center; }
-  footer .mobile { float: none; }
+
+  .footer-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .footer-version {
+    font-family: monospace;
+    font-size: 12px;
+    opacity: 0.5;
+    letter-spacing: 0.05em;
+  }
+
   .footer-lang-toggle {
     display: flex;
     gap: 6px;
     flex-shrink: 0;
   }
+
+  .footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  footer a.logo { display: flex; align-items: center; }
+  footer .mobile { display: none; }
 }
 
 /* ── Home feed cronologico ───────────────────────────────── */

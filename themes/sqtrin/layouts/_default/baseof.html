@@ -16,7 +16,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="{{ "/media/interface/apple-touch-icon.png" | relURL }}">
   <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
   {{ with site.Params.favicon }}<link rel="shortcut icon" type="image/png" href="{{ . | relURL }}">{{ end }}
-  <script>!function(){var l=localStorage.getItem('sq-lang');document.documentElement.dataset.lang=(l==='it'?'it':'en');}();</script>
+  <script>!function(){var l=localStorage.getItem('sq-lang');document.documentElement.dataset.lang=(l==='en'?'en':'it');}();</script>
   <style>html[data-lang] .has-multilang .lang-block{display:none}html[data-lang="en"] .has-multilang .lang-block[data-lang="en"],html[data-lang="it"] .has-multilang .lang-block[data-lang="it"]{display:block}</style>
 </head>
 <body class="page_{{ .Type }}{{ if .IsHome }} page_home{{ end }}">
@@ -144,29 +144,27 @@
   </main>
 
   <footer>
-    <a class="logo" href="{{ "/" | relURL }}" aria-label="homepage">
-      {{ with site.Params.square }}
-      <img src="{{ . | relURL }}" alt="{{ site.Title }} logo" class="nodithering" width="100" height="100">
-      {{ else }}
-      <span class="logo-text">{{ site.Title }}</span>
-      {{ end }}
-    </a>
-    <span>
-      <b>{{/* site.Title */}}</b> &copy; {{ now.Year }}
-    </span>
-    <div class="mobile">
-      <span>
-        {{ range site.Menus.footer }}
-        <a href="{{ .URL }}">{{ .Name }}</a>{{ if not .Post }} | {{ end }}
+    <div class="footer-top">
+      <span class="footer-version">v{{ site.Params.version }}</span>
+      <div class="footer-lang-toggle" aria-label="language selector">
+        <button class="lang-btn" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="it">IT</button>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <a class="logo" href="{{ "/" | relURL }}" aria-label="homepage">
+        {{ with site.Params.square }}
+        <img src="{{ . | relURL }}" alt="{{ site.Title }} logo" class="nodithering" width="100" height="100">
+        {{ else }}
+        <span class="logo-text">{{ site.Title }}</span>
         {{ end }}
+      </a>
+      <span>
+        <b>{{/* site.Title */}}</b> &copy; {{ now.Year }}
         {{ with site.Params.license }}
-        <a href="{{ .url }}" target="_blank">{{ .name }}</a>
+        &mdash; <a href="{{ .url }}" target="_blank">{{ .name }}</a>
         {{ end }}
       </span>
-    </div>
-    <div class="footer-lang-toggle" aria-label="language selector">
-      <button class="lang-btn" data-lang="en">EN</button>
-      <button class="lang-btn" data-lang="it">IT</button>
     </div>
   </footer>
 
@@ -200,7 +198,7 @@
     document.querySelectorAll('.lang-btn').forEach(function(btn){
       btn.addEventListener('click', function(){ activate(this.dataset.lang); });
     });
-    activate(localStorage.getItem('sq-lang') === 'it' ? 'it' : 'en');
+    activate(localStorage.getItem('sq-lang') === 'en' ? 'en' : 'it');
   })();
   </script>
 </body>
