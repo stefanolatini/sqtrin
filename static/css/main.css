@@ -387,7 +387,7 @@ html[data-lang="it"] .has-multilang .lang-block[data-lang="it"] { display: block
 
   .footer-version {
     font-family: monospace;
-    font-size: 12px;
+    font-size: 25px;
     opacity: 0.5;
     letter-spacing: 0.05em;
   }
