@@ -1,5 +1,6 @@
 ---
 title: "Post"
+url: "/post/"
 ---
 
 <!-- Monthly updates.-->
