@@ -18,6 +18,7 @@
 body { background:#fff; color:#000; overflow-x: hidden; font-family: sans-serif; padding:0; margin:0; }
 
 body header {
+	position: relative;
 	padding: 10px 30px;
 	border-bottom: 2px solid white;
 }
@@ -348,6 +349,41 @@ html[data-lang="it"] .has-multilang .lang-block[data-lang="it"] { display: block
   display: flex;
   gap: 6px;
   align-items: center;
+}
+
+/* ── Language toggle header/footer ──────────────────────── */
+
+.header-lang-toggle {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.footer-lang-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .header-lang-toggle { display: none; }
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: nowrap;
+    padding: 20px;
+  }
+  footer a.logo { float: none; display: flex; align-items: center; }
+  footer .mobile { float: none; }
+  .footer-lang-toggle {
+    display: flex;
+    gap: 6px;
+    flex-shrink: 0;
+  }
 }
 
 /* ── Home feed cronologico ───────────────────────────────── */
